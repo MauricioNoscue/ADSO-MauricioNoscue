@@ -31,11 +31,11 @@ Para crear listas de viñetas, empiece una línea con *, - o +
 * `- hola`
 
 # Nota
->[!NOTE]
+>[!IMPORTANT]
    > 
    >que hacen.
 
-+ `>[!hola]`
++ `>[!NOTE]`
 + ` >` 
 + `>que hacen.`
 
@@ -58,4 +58,6 @@ Para crear listas de viñetas, empiece una línea con *, - o +
  |  María isabel |tovar pastrana | F |
 
  # Vínculos
+` [github](https://github.com/MauricioNoscue)`
+
  [github](https://github.com/MauricioNoscue)
