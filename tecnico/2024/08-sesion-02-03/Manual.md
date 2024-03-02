@@ -31,7 +31,7 @@ Para crear listas de viñetas, empiece una línea con *, - o +
 * `- hola`
 
 # Nota
->[!hola]
+>[!NOTE]
    > 
    >que hacen.
 
