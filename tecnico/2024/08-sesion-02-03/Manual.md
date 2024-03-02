@@ -43,18 +43,35 @@ Para crear listas de viñetas, empiece una línea con *, - o +
 
 Puede elegir entre estos tipos de bloques de notas para llamar la atención sobre un contenido específico:
 
+Bloques de notas
+Puede elegir entre estos tipos de bloques de notas para llamar la atención sobre un contenido específico:
+
+>[!NOTE]
+>[!TIP]
+>[!IMPORTANT]
+>[!CAUTION]
+>[!WARNING]
+>[!ADMINISTRATION]
+>[!AVAILABILITY]
+>[!PREREQUISITES]
+>[!ERROR]
+>[!ADMINISTRATION]
+>[!INFO]
+>[!SUCCESS]
+
 * [!NOTE]
 * [!TIP]
 * [!IMPORTANT]
 * [!CAUTION]
 * [!WARNING]
-* [ !ADMINISTRATION]
+* [!ADMINISTRATION]
 * [!AVAILABILITY]
 * [!PREREQUISITES]
 * [!ERROR]
 * [!ADMINISTRATION]
 * [!INFO]
 * [!SUCCESS]
+
 
 # Bloques de notas
 Puede elegir entre estos tipos de bloques de notas para llamar la atención sobre un contenido específico:
