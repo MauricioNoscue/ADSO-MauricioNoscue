@@ -39,6 +39,26 @@ Para crear listas de viñetas, empiece una línea con *, - o +
 + ` >` 
 + `>que hacen.`
 
+# Bloques de notas
+
+Puede elegir entre estos tipos de bloques de notas para llamar la atención sobre un contenido específico:
+
+* [!NOTE]
+* [!TIP]
+* [!IMPORTANT]
+* [!CAUTION]
+* [!WARNING]
+* [ !ADMINISTRATION]
+* [!AVAILABILITY]
+* [!PREREQUISITES]
+* [!ERROR]
+* [!ADMINISTRATION]
+* [!INFO]
+* [!SUCCESS]
+
+# Bloques de notas
+Puede elegir entre estos tipos de bloques de notas para llamar la atención sobre un contenido específico:
+
 # Imágenes 
 ` ![la chona](imagenes/img2.png)`
 
@@ -61,3 +81,4 @@ Para crear listas de viñetas, empiece una línea con *, - o +
 ` [github](https://github.com/MauricioNoscue)`
 
  [github](https://github.com/MauricioNoscue)
+
