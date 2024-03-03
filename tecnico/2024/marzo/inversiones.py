@@ -9,6 +9,3 @@ por3 = (p3 / cantidad_total) * 100
 print ("El porcentaje que compró la primera persona fue del",por1,"%")
 print  ("El porcentaje que compró la segunda persona fue del ",por2, "%")
 print (" El porcentaje que compró la tercera persona fue del ", por3 ,"%.")
- 
- 
- 
