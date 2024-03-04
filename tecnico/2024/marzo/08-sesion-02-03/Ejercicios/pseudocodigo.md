@@ -1,9 +1,7 @@
  # INVERSIONES 
 ```
 INICIO
-	//Tres personas deciden invertir su dinero para fundar una empresa.
-	//Cada una de ellas invierte una cantidad distinta.
-	//Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.	
+
 	Definir p1, p2, p3, in1, in2, in3, total Como Real
 	p1 =0.0
 	p2 =0.0
