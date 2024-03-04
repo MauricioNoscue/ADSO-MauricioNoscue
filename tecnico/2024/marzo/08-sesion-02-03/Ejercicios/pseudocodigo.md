@@ -22,9 +22,9 @@ Algoritmo sin_titulo
 	in1<- (p1/total)*100
 	in2<- (p2/total)*100
 	in3<- (p3/total)*100
-	Escribir " la persona 1 iniverte el ",in1,"% del total que es",total;
-	Escribir " la persona 2 iniverte el ",in2," % del total que es ",total;
-	Escribir " la persona 3 iniverte el ",in3," % del total que es ",total;
+	Escribir " la persona 1 invierte el ",in1,"% del total que es",total;
+	Escribir " la persona 2 invierte el ",in2," % del total que es ",total;
+	Escribir " la persona 3 invierte el ",in3," % del total que es ",total;
 	
 FinAlgoritmo
 ```
