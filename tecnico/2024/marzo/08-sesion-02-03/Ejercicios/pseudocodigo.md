@@ -16,10 +16,10 @@ INICIO
 	leer p2;
 	Escribir "Cantidad persona 3:";
 	leer p3;
-	total<- p1+p2+p3
-	in1<- (p1/total)*100
-	in2<- (p2/total)*100
-	in3<- (p3/total)*100
+	total= p1+p2+p3
+	in1= (p1/total)*100
+	in2= (p2/total)*100
+	in3= (p3/total)*100
 	Escribir " la persona 1 invierte el ",in1,"% del total que es",total;
 	Escribir " la persona 2 invierte el ",in2," % del total que es ",total;
 	Escribir " la persona 3 invierte el ",in3," % del total que es ",total;
@@ -65,10 +65,10 @@ INICIO
 	leer t3m;
 	Escribir " Ingrese la nota del examen de matemáticas:";
 	leer em;
-	ttm<- (t1m + t2m + t3m) / 3
-	pt<-ttm * 0.1
-	pex<- em *0.9
-	m1<- pt+pex
+	ttm= (t1m + t2m + t3m) / 3
+	pt = ttm * 0.1
+	pex = em *0.9
+	m1 = pt+pex
 
 	Escribir "Ingrese la nota de la tarea 1 de física:";
 	leer t1f;
@@ -76,10 +76,10 @@ INICIO
 	leer t2f;
 	Escribir " Ingrese la nota del examen de física :";
 	leer ef;
-	ttf<- (t1f + t2f ) / 2
-	ptf<-ttf * 0.2
-	pexf<- ef *0.8
-	m2<- ptf+pexf
+	ttf = (t1f + t2f ) / 2
+	ptf =ttf * 0.2
+	pexf = ef *0.8
+	m2 = ptf+pexf
 	
 	Escribir "Ingrese la nota de la tarea 1 de química :";
 	leer t1q;
@@ -89,10 +89,10 @@ INICIO
 	leer t3q;
 	Escribir " Ingrese la nota del examen de química :";
 	leer eq;
-	ttq<- (t1q + t2q + t3q) / 3
-	ptq<-ttq * 0.15
-	pexq<- eq *0.85
-	m3<- ptq+pexq
+	ttq = (t1q + t2q + t3q) / 3
+	ptq = ttq * 0.15
+	pexq = eq *0.85
+	m3 = ptq+pexq
 	Escribir " la nota final de matemáticas   es:",m1;
 	Escribir " la nota final de física es:",m2;
 	Escribir " la nota final de química  es:",m3;
