@@ -103,7 +103,7 @@ FIN
 
 
 
-# NUMERO POSITIVO O NEGATIVO 
+# NÚMERO POSITIVO O NEGATIVO 
 ```
 INICIO
 	Definir n como real 
@@ -117,7 +117,7 @@ FinSi
 FIN
 ```
 
-# NUMERO MAYOR A 200
+# NÚMERO MAYOR A 200
 ```
 INICIO
 	Definir n como real 
