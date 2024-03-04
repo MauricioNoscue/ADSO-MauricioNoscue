@@ -1,6 +1,6 @@
  # INVERSIONES 
 ```
-Algoritmo sin_titulo
+INICIO
 	//Tres personas deciden invertir su dinero para fundar una empresa.
 	//Cada una de ellas invierte una cantidad distinta.
 	//Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.	
@@ -26,14 +26,14 @@ Algoritmo sin_titulo
 	Escribir " la persona 2 invierte el ",in2," % del total que es ",total;
 	Escribir " la persona 3 invierte el ",in3," % del total que es ",total;
 	
-FinAlgoritmo
+FIN
 ```
 
 
 
 # NOTAS FINALES 
 ```
-Algoritmo sin_titulo
+INICIO
 
 	Definir m1, m2, m3, t1m, t2m, t3m, em, ef, t1f, t2f, eq, t1q, t2q, t3q, ttm, ttf, ttq, tff, nfq, pt, pex, ptf, pexf, ptq, pexq  Como Real
 	m1 = 0.0
@@ -98,7 +98,7 @@ Algoritmo sin_titulo
 	Escribir " la nota final de matemáticas   es:",m1;
 	Escribir " la nota final de física es:",m2;
 	Escribir " la nota final de química  es:",m3;
-FinAlgoritmo
+FIN
 ```
 	
 
@@ -107,42 +107,42 @@ FinAlgoritmo
 
 # NUMERO POSITIVO O NEGATIVO 
 ```
-Algoritmo sin_titulo
+INICIO
 	Definir n como real 
 	Escribir "Ingrese un número: ";
 	leer n;
-	si n >= 0 Entonces
-		Escribir " El número es positivo:",n;
-	sino 
-		Escribir "El número es negativo:",n;
-	FinSi
-FinAlgoritmo
+si n >= 0 Entonces
+        Escribir " El número es positivo:",n;
+sino 
+        Escribir "El número es negativo:",n;
+FinSi
+FIN
 ```
 
 # NUMERO MAYOR A 200
 ```
-Algoritmo sin_titulo
+INICIO
 	Definir n como real 
 	Escribir "ingrese un número:";
 	leer n;
-	si n > 200 entonces 
-		Escribir " El número es mayor que 200:"
-	sino 
-		Escribir " El número es menor que 200:"
-	FinSi
-FinAlgoritmo
+si n > 200 entonces 
+        Escribir " El número es mayor que 200:"
+sino 
+        Escribir " El número es menor que 200:"
+FinSi
+FIN
 ```
 
 # RANGO 50-100
 ```
-Algoritmo sin_titulo
+INICIO
 	Definir n como real 
 	Escribir "ingrese un número:";
 	leer n;
-	si n >= 50 y n <=100  entonces 
-		Escribir " El número está en el rango de 50 100:"
-	sino 
-		Escribir " El número no está en el rango de 50 100:"
-	FinSi
-FinAlgoritmo
+si n >= 50 y n <=100  entonces 
+       Escribir " El número está en el rango de 50 100:"
+sino 
+       Escribir " El número no está en el rango de 50 100:"
+FinSi
+FIN
 ```
