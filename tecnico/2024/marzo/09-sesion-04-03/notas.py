@@ -41,8 +41,8 @@ if examenM > 0 and  examenM <=10:
                                             print(msgOk)
                                             
                                             promedioMatemáticas = (examenM * 0.9+((tarea1m + tarea2m +tarea3m)/3)*0.1)
-                                            promedioFísica  = (Examenf * 0.2 +((tarea1f + tarea2f )/ 2)*0.1)
-                                            promedioQuímica = (examenq * 0.15 + ((tarea1q +tarea2q + tarea3q)/ 3)*0.85)
+                                            promedioFísica  = (Examenf * 0.8 +((tarea1f + tarea2f )/ 2)*0.2)
+                                            promedioQuímica = (examenq * 0.85 + ((tarea1q +tarea2q + tarea3q)/ 3)*0.15)
                                             print("La nota final de matemáticas es", promedioMatemáticas)
                                             print("La nota final de física es", promedioFísica)
                                             print("La nota final de química es", promedioQuímica)
