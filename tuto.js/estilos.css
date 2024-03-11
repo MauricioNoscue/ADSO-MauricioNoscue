@@ -1,0 +1,28 @@
+.d{
+    text-align: center;
+  
+}
+input{
+display: block;
+margin: 0 auto;
+margin-bottom: 15px;
+}
+
+.u{
+    text-align: center;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+} 
+
+.contenedor {
+    
+    width: 300px; /* Ajusta el ancho según necesites */
+    margin: 20px auto; /* Esto centrará el div en la página, con un margen superior e inferior de 20px */
+    border: 2px solid #000; /* Mantiene el borde sólido, de 2px de grosor y color negro */
+    padding: 20px; /* Mantiene un relleno interno alrededor del contenido dentro del div */
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el cálculo del ancho total del div */
+  }
+  
