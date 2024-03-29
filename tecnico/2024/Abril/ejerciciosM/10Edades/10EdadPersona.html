@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad1;
+        let edad2;
+        let edad3;
+        let fechAct;
+        let fechaNaci1;
+        let fechaNaci2;
+        let fechaNaci3;
+        let promedio;
+        fechAct = 2024;
+        fechaNaci1 = 2000;
+        fechaNaci2 = 1999;
+        fechaNaci3 = 2008;
+        edad1 = fechAct - fechaNaci1;
+        edad2 = fechAct - fechaNaci2;
+        edad3 = fechAct - fechaNaci3;
+        promedio = (edad1 + edad2 + edad3)/3;
+        if(edad1>=18){
+            console.log("La persona 1 es mayor de edad: "+edad1);
+        }
+            else{
+            console.log("La persona 1  es menor de edad: "+edad1)
+            }
+                if(edad2>=18){
+                    console.log("La persona 2 es mayor de edad: "+edad2);
+                }
+                    else{
+                        console.log("La persona 2 es menor de edad: "+edad2);
+                    }
+                        if(edad3>=18){
+                            console.log("La persona 3 es mayor de edad: "+edad3);
+                        }
+                            else{
+                                console.log("La persona 3 es menor de edad: "+edad3);
+                            }
+                                if(promedio>=18){
+                                    console.log("El promedio si está en el promedio de la mayoría de edad: "+promedio);
+                                }
+                                    else{
+                                        console.log("El promedio no está en el promedio de la mayoría de edad: "+promedio);
+                                     
+                                    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero;
+        let tabla;
+        let contador;
+        let resultado
+        numero = 5;
+        tabla = 9;
+        contador = 0;
+        resultado = 0;
+        while(contador<numero){
+            contador++;
+            resultado = tabla * contador;
+            if(resultado%2==0){
+                console.log(tabla+"x"+contador+ "=" +resultado+ " es par");
+            }
+                else{
+                    console.log(tabla+"x"+contador+ "=" +resultado+ " es impar");
+                }
+        }
+    </script>
+</body>
+</html>

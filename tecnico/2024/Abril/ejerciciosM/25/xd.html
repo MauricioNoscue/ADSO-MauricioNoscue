@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tabla;
+        let multiplicar;
+        let resultado;
+        let par;
+        let impar;
+        let cTabla;
+        let cMult;
+        tabla = 5;
+        multiplicar = 5;
+        resultado = 0;
+        par = 0;
+        impar = 0;
+        cTabla = 0;
+        while(cTabla < tabla){
+            cMult= 0;
+            cTabla++;
+            while (cMult < multiplicar){
+                cMult++;
+                resultado = cTabla * cMult;
+                if (resultado % 2 == 0) {
+                    par++;
+                    console.log(cTabla+"x"+cMult+ "=" +resultado+" bazz");
+                } else{
+                    impar++;
+                    console.log(cTabla+"x"+cMult+ "=" +resultado+" buss");
+                }
+               
+            }
+        }
+                    console.log("hay "+par+" pares");
+                    console.log("hay "+impar+" impares");
+    </script>
+</body>
+</html>

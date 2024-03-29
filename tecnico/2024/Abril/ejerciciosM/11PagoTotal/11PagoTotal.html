@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pagoTotal;
+        let valorDia;
+        let diasTrabajados;
+        let salario;
+        let smm;
+        let salud;
+        let arl;
+        let pension;
+        let descuento;
+        let retencion;
+        let sbtransp;
+        valorDia =  50000;
+        diasTrabajados = 30;
+        salario = valorDia *  diasTrabajados;
+        salud = salario * 0.12;
+        pension = salario * 0.16;
+        arl = salario * 0.052;
+        smm = 13000000;
+        if(smm > 2*smm){
+            sbtransp = sbtransp + 114000;
+        }
+            else{
+                sbtransp = 0;
+            }
+                if(salario > 4*smm){
+                    retencion = salario * 0.04;
+                }
+                    else{
+                        retencion = 0;
+                    }
+                        descuento = salud + pension + arl;
+                        pagoTotal = (salario + sbtransp) - (descuento + retencion);
+                        
+                        console.log("Salario: "+salario+"\n");
+                        console.log("Salud: "+salud+"\n");
+                        console.log("Pensión: "+pension+"\n");
+                        console.log("arl: "+arl+"\n");
+                        console.log("Descuento: "+descuento+"\n");
+                        console.log("Pago total: "+pagoTotal+"\n");
+                        console.log("transporte: "+sbtransp+"\n");
+                        console.log("retencion: "+retencion+"\n");
+    </script>
+</body>
+</html>
