@@ -22,3 +22,5 @@ const sumar2 = function (pnumero1, pnumero2){
 
 
 }
+
+

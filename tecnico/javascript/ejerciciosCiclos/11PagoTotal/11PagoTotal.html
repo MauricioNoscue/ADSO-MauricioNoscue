@@ -18,15 +18,16 @@
         let descuento;
         let retencion;
         let sbtransp;
-        valorDia =  50000;
+        valorDia =  50000000;
         diasTrabajados = 30;
         salario = valorDia *  diasTrabajados;
         salud = salario * 0.12;
         pension = salario * 0.16;
         arl = salario * 0.052;
         smm = 13000000;
-        if(smm > 2*smm){
-            sbtransp = sbtransp + 114000;
+        
+        if(salario < 2*smm){
+            sbtransp =  114000;
         }
             else{
                 sbtransp = 0;

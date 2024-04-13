@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="salario.js"></script>
+</head>
+<body>
+    <script>
+        let salario = calcularSalario(50000, 30);
+        console.log("Salario: "+salario);
+
+        let Salud = calcularSalud(salario, 0.12);
+        console.log("salud: "+Salud);
+
+        let pension  = calcularPension(salario, 0.16);
+        console.log("Pensión: "+pension);
+
+        let arl = calcularArl(salario, 0.052);
+        console.log("ARL: "+arl);
+
+
+        let descuento = calcularDescuento(Salud, pension, arl);
+        console.log("Descuento : "+descuento);
+
+        let  pagoTotal = calcularPago(salario, descuento);
+        console.log("Pago Total: "+pagoTotal);
+
+
+        
+        console.log("Constantes");
+
+        let salario2 = calcularSalario2(50000, 30);
+        console.log("Salario: "+salario2);
+
+        let Salud2 = calcularSalud2(salario2, 0.12);
+        console.log("salud: "+Salud2);
+
+        let pension2  = calcularPension2(salario2, 0.16);
+        console.log("Pensión: "+pension2);
+
+        let arl2 = calcularArl2(salario2, 0.052);
+        console.log("ARL: "+arl2);
+        let descuento2 = calcularDescuento2(Salud2, pension2, arl2);
+        console.log("Descuento : "+descuento2);
+
+        let  pagoTotal2 = calcularPago2(salario2, descuento2);
+        console.log("Pago Total: "+pagoTotal2);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

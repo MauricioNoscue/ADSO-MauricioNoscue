@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="totalC.js"></script>
+</head>
+<body>
+    <script>
+        let salario = calcularSalario(50000, 30);
+        console.log("Salario: "+salario);
+
+        let Salud = calcularSalud(salario, 0.12);
+        console.log("salud: "+Salud);
+
+        let pension  = calcularPension(salario, 0.16);
+        console.log("Pensión: "+pension);
+
+        let arl = calcularArl(salario, 0.052);
+        console.log("ARL: "+arl);
+        
+        let transporte = trasnportee(salario,1300000)
+        console.log("Trasnporte: "+transporte)
+
+        let  retencion = retencionn(salario,1300000)
+        console.log("Retención: "+retencion)
+
+        let descuento = calcularDescuento(Salud, pension, arl);
+        console.log("Descuento : "+descuento);
+
+        let  pagoTotal = calcularPago(salario, transporte, descuento, retencion);
+        console.log("Pago Total: "+pagoTotal);
+
+    </script>
+</body>
+</html>
