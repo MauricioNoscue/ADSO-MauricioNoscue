@@ -1,38 +1,39 @@
-function tablaa(pnumero, ptabla, pcontador,presultado){
-    let numero = pnumero;
+function tablaa( ptabla){
+    let numero = 5;
     let tabla = ptabla;
-    let contador = pcontador;
-    let resultado = presultado;
-
+    let contador = 0;
+    let multiplicacion = 0;
+    let resultado = "" 
     while(contador<numero){
         contador++;
-        resultado = tabla * contador;
-        if(resultado%2==0){
-            console.log(tabla+"x"+contador+ "=" +resultado+ " es par");
+        multiplicacion  = tabla * contador;
+        if(multiplicacion %2==0){
+            resultado += tabla+"x"+contador+ "=" +multiplicacion + " es par"+ "\n";
         }
             else{
-                console.log(tabla+"x"+contador+ "=" +resultado+ " es impar");
+                resultado += tabla+"x"+contador+ "=" +multiplicacion + " es impar" + "\n";
             }
         }
      return resultado;   
 }    
 
 
-const tablaa2 = function(pnumero, ptabla, pcontador,presultado){
-    let numero = pnumero;
+const tablaa2 = function(ptabla){
+    let numero = 5;
     let tabla = ptabla;
-    let contador = pcontador;
-    let resultado = presultado;
-
+    let contador = 0;
+    let multiplicacion = 0;
+    let resultado = "" 
     while(contador<numero){
         contador++;
-        resultado = tabla * contador;
-        if(resultado%2==0){
-            console.log(tabla+"x"+contador+ "=" +resultado+ " es par");
+        multiplicacion  = tabla * contador;
+        if(multiplicacion %2==0){
+            resultado += tabla+"x"+contador+ "=" +multiplicacion + " es par"+ "\n";
         }
             else{
-                console.log(tabla+"x"+contador+ "=" +resultado+ " es impar");
+                resultado += tabla+"x"+contador+ "=" +multiplicacion + " es impar" + "\n";
             }
         }
-     return resultado;   
+     return resultado;  
 }    
+

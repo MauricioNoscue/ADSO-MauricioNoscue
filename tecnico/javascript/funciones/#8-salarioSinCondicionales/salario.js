@@ -6,28 +6,26 @@ function calcularSalario(pavalorDia, pdiasTrab) {
     return   salario;
 }
 
-
-function calcularSalud(psalario, pporcentaje1) {
+function calcularSalud(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje1;
+    let porcentaje = 0.12;
     let salud = salarioo * porcentaje;
     return salud;
 }
 
-function calcularPension(psalario, pporcentaje2) {
+function calcularPension(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje2;
+    let porcentaje = 0.16;
     let pension = salarioo * porcentaje;
     return pension;
 }
 
-function calcularArl(psalario, pporcentaje3) {
+function calcularArl(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje3;
+    let porcentaje = 0.052;
     let arl = salarioo * porcentaje;
     return arl;
 }
-
 
 function calcularDescuento(psalud, ppension,parl){
     let salud = psalud;
@@ -44,7 +42,6 @@ function calcularPago(psalario,pdescuento){
     let pago;
     pago = salario - descuento;
     return pago;
-   
 }
 
 
@@ -59,21 +56,21 @@ const calcularSalario2 = function(pavalorDia, pdiasTrab) {
     return   salario;
 }
 
-const calcularSalud2 = function(psalario, pporcentaje1) {
+const calcularSalud2 = function(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje1;
+    let porcentaje = 0.12;
     let salud = salarioo * porcentaje;
     return salud;
 }
-const calcularPension2 = function(psalario, pporcentaje2) {
+const calcularPension2 = function(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje2;
+    let porcentaje = 0.16;
     let pension = salarioo * porcentaje;
     return pension;
 }
-const calcularArl2 = function(psalario, pporcentaje3) {
+const calcularArl2 = function(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje3;
+    let porcentaje = 0.052;
     let arl = salarioo * porcentaje;
     return arl;
 }
@@ -94,3 +91,4 @@ const calcularPago2 = function(psalario,pdescuento){
     return pago;
                                 
 }
+ 

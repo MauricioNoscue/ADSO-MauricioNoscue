@@ -1,18 +1,21 @@
 function numeros(pnumero){
     let contar;
     let numero = pnumero;
+    let resultado = ""
     for(contar = 1; contar<=numero; contar++){
-        console.log(contar);
+        resultado += contar+"\n";
     }
-    return contar;
+    return resultado;
 }  
 
 
 const numeros2 = function(pnumero){
     let contar;
     let numero = pnumero;
+    let resultado = ""
     for(contar = 1; contar<=numero; contar++){
-        console.log(contar);
+        resultado += contar+"\n";
     }
-    return contar;
-}
+    return resultado;
+}  
+

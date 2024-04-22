@@ -32,7 +32,7 @@ function calcularNotaFinal(pnota1, pnota2, pnota3){
 //constante
 
 const calcularNota2 = function (pnota, pporcen){
-    let nota = pnota;
+    let nota = pnota;  
     let porcen = pporcen;
     let total;
     total = nota * porcen;
@@ -60,3 +60,5 @@ const calcularNotaFinal2 = function(pnota1, pnota2, pnota3){
     }
 
 }
+
+

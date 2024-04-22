@@ -3,6 +3,8 @@
  * con parámetros sin expresión
  *
  */
+
+
 function restar (pnumero1, pnumero2){
     let num1 = pnumero1;
     let num2 = pnumero2;
@@ -49,11 +51,13 @@ const multiplicar2 = function  (pnumero1, pnumero2){
 
 }
 
-const dividir3 = function (pnumero1, pnumero2){
+const dividir2 = function (pnumero1, pnumero2){
     let num1 = pnumero1;
     let num2 = pnumero2;
     let division = num1 / num2
     return division;
 
 }
+
+
 

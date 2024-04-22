@@ -1,23 +1,27 @@
-function factorial (pnumero, pcontador, pfactorial){
+function factorial (pnumero){
     let numero = pnumero;
-    let contador = pcontador;
-    let factorial = pfactorial;
+    let contador = 0;
+    let factorial = 1;
+    let resultado = "";
     while(contador < numero){
         contador++;
         factorial = factorial * contador;
     } 
-        console.log(factorial);
-        return factorial;
+        resultado += factorial;
+        return resultado;
 }
 
-const factorial2 = function (pnumero, pcontador, pfactorial){
+const factorial2 = function (pnumero){
     let numero = pnumero;
-    let contador = pcontador;
-    let factorial = pfactorial;
+    let contador = 0;
+    let factorial = 1;
+    let resultado = "";
     while(contador < numero){
         contador++;
         factorial = factorial * contador;
     } 
-        console.log(factorial);
-        return factorial;
+        resultado += factorial;
+        return resultado;
 }
+
+

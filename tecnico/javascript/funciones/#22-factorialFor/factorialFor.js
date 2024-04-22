@@ -1,24 +1,28 @@
-function calcular(pnumero,pfactoria){
+function calcular(pnumero){
     let numero = pnumero;
-    let factorial = pfactoria;
+    let factorial = 1;
     let contador;
-    
     for(contador = 1; contador <= numero; contador++){
-        factorial = factorial * contador;
+        factorial = factorial * contador+"\n";
+        
     }
-        console.log(factorial);
+        
         return factorial;
 }
 
 
-const  calcular2 = function(pnumero,pfactoria){
+const  calcular2 = function(pnumero){
     let numero = pnumero;
-    let factorial = pfactoria;
+    let factorial = 1;
     let contador;
     
     for(contador = 1; contador <= numero; contador++){
-        factorial = factorial * contador;
+        factorial = factorial * contador+"\n";
+        
     }
-        console.log(factorial);
+        
         return factorial;
 }
+
+ 
+

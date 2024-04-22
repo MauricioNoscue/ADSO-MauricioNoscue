@@ -1,25 +1,25 @@
-function calcular(pnumero, pcontador){
+function calcular(pnumero){
     let numero = pnumero;
-    let contador = pcontador;
+    let contador = 0;
+    let resultado = ""
     while (contador <numero) {
         contador++;
-        console.log(contador);
-        
+        resultado += contador+"\n";
     }
-    return contador;
-    
+    return resultado;
 }
 
 
-const  calcular2 = function(pnumero, pcontador){
+const  calcular2 = function(pnumero){
     let numero = pnumero;
-    let contador = pcontador;
+    let contador = 0;
+    let resultado = ""
     while (contador <numero) {
         contador++;
-        console.log(contador);
-        
+        resultado += contador+"\n";
     }
-    return contador;
-    
+    return resultado;
 }
+
+
 

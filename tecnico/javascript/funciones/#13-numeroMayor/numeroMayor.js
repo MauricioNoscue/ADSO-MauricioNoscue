@@ -15,5 +15,6 @@ const numMayor2 = function (pnum1, pnum2){
         return "El número mayor es el uno "+ num1;
     }else{
         return "El número mayor es el dos "+ num2;
-}   
+    }   
 }
+

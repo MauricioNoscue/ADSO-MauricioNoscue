@@ -61,3 +61,4 @@ const areaMayor2= function(parea1, parea2, parea3){
     }
 
 }
+

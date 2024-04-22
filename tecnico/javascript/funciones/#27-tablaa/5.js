@@ -1,58 +1,59 @@
 function tablaDeMultiplicar (pnumero){
     let numero = pnumero;
-    tabla = 0;
-    par = 0;
-    impar = 0;
-    resultado = 0;
+    let tabla = 0;
+    let par = 0;
+    let impar = 0;
+    let resultado = "";
+    let multiplicacion;
     while(tabla < numero){
         tabla++;
         multiplicar = 0;
         while (multiplicar < numero){
-            resultado = tabla *(multiplicar+1);
-            console.log(tabla+" x "+(multiplicar+1)+" = "+resultado);
-            if(resultado %2 == 0){
+            multiplicacion = tabla *(multiplicar+1);
+            resultado += tabla+" x "+(multiplicar+1)+" = "+multiplicacion+"\n";
+            if(multiplicacion %2 == 0){
                 par++;
-                console.log("buzz");
+                resultado += "buzz"+"\n";
             }
                 else{
                     impar++;
-                    console.log("bass");
+                    resultado += "bass"+"\n";
                     
                 }
                 multiplicar++;
         }
-   } console.log(par)
-   console.log(impar)
-   return resultado;
+   } 
+   return resultado +par+"\n" +impar;
 
 }
 
 
 const tablaDeMultiplicar2 = function (pnumero){
     let numero = pnumero;
-    tabla = 0;
-    par = 0;
-    impar = 0;
-    resultado = 0;
+    let tabla = 0;
+    let par = 0;
+    let impar = 0;
+    let resultado = "";
+    let multiplicacion;
     while(tabla < numero){
         tabla++;
         multiplicar = 0;
         while (multiplicar < numero){
-            resultado = tabla *(multiplicar+1);
-            console.log(tabla+" x "+(multiplicar+1)+" = "+resultado);
-            if(resultado %2 == 0){
+            multiplicacion = tabla *(multiplicar+1);
+            resultado += tabla+" x "+(multiplicar+1)+" = "+multiplicacion+"\n";
+            if(multiplicacion %2 == 0){
                 par++;
-                console.log("buzz");
+                resultado += "buzz"+"\n";
             }
                 else{
                     impar++;
-                    console.log("bass");
+                    resultado += "bass"+"\n";
                     
                 }
                 multiplicar++;
         }
-   } console.log(par)
-   console.log(impar)
-   return resultado;
+   } 
+   return resultado +par+"\n" +impar;
 
 }
+

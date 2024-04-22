@@ -8,29 +8,58 @@
 </head>
 <body>
     <script>
-        let salario = calcularSalario(50000, 30);
-        console.log("Salario: "+salario);
+        console.log("Parámetros")
 
-        let Salud = calcularSalud(salario, 0.12);
+        let salario = calcularSalario(50000, 30);
+        console.log("Salario: "+salario); 
+
+        let Salud = calcularSalud(salario);
         console.log("salud: "+Salud);
 
-        let pension  = calcularPension(salario, 0.16);
+        let pension  = calcularPension(salario);
         console.log("Pensión: "+pension);
 
-        let arl = calcularArl(salario, 0.052);
+        let arl = calcularArl(salario);
         console.log("ARL: "+arl);
         
-        let transporte = trasnportee(salario,1300000)
+        let transporte = trasnportee(salario)
         console.log("Trasnporte: "+transporte)
 
-        let  retencion = retencionn(salario,1300000)
+        let  retencion = retencionn(salario)
         console.log("Retención: "+retencion)
 
-        let descuento = calcularDescuento(Salud, pension, arl);
+        let descuento = calcularDescuento(salario);
         console.log("Descuento : "+descuento);
 
-        let  pagoTotal = calcularPago(salario, transporte, descuento, retencion);
+        let  pagoTotal = calcularPago(salario);
         console.log("Pago Total: "+pagoTotal);
+
+
+        console.log("Expresión")
+
+        let salario2 = calcularSalario(50000, 30);
+        console.log("Salario: "+salario2); 
+
+        let Salud2 = calcularSalud(salario2);
+        console.log("salud: "+Salud2);
+
+        let pension2  = calcularPension(salario2);
+        console.log("Pensión: "+pension2);
+
+        let arl2 = calcularArl(salario);
+        console.log("ARL: "+arl2);
+        
+        let transporte2 = trasnportee(salario2)
+        console.log("Trasnporte: "+transporte2)
+
+        let  retencion2 = retencionn(salario2)
+        console.log("Retención: "+retencion2)
+
+        let descuento2 = calcularDescuento(salario2);
+        console.log("Descuento : "+descuento2);
+
+        let  pagoTotal2 = calcularPago(salario2);
+        console.log("Pago Total: "+pagoTotal2);
 
     </script>
 </body>

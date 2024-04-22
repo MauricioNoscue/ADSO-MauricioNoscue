@@ -1,55 +1,54 @@
-function tablaDeMultiplicar(ptabla, pmultiplicar) {
+function tablaDeMultiplicar(ptabla) {
     let tabla = ptabla;
-    let multiplicar = pmultiplicar;
-    let resultado = 0;
+    let resultado = "";
     let par = 0;
     let impar = 0;
     let cTabla = 0;
+    let multiplicacion = 0;
 
     while(cTabla < tabla){
         let cMult = 0;
         cTabla++;
-        while (cMult < multiplicar){
+        while (cMult < tabla){
             cMult++;
-            resultado = cTabla * cMult;
-            if (resultado % 2 == 0) {
+            multiplicacion = cTabla * cMult;
+            if (multiplicacion % 2 == 0) {
                 par++;
-                console.log(cTabla+"x"+cMult+ "=" +resultado+" bazz");
+                resultado += cTabla+"x"+cMult+ "=" +multiplicacion+" bazz"+"\n";
             } else {
                 impar++;
-                console.log(cTabla+"x"+cMult+ "=" +resultado+" buss");
+                resultado += cTabla+"x"+cMult+ "=" +multiplicacion+" buss"+"\n";
             }
         }
     }
-    console.log("hay "+par+" pares");
-    console.log("hay "+impar+" impares");
-    return resultado;
+    
+    return resultado +"hay "+par+" pares" +"\n" +" hay "+impar+" impares"+"\n";
 }
 
-const tablaDeMultiplicar2 = function(ptabla, pmultiplicar) {
+const tablaDeMultiplicar2 = function(ptabla) {
     let tabla = ptabla;
-    let multiplicar = pmultiplicar;
-    let resultado = 0;
+    let resultado = "";
     let par = 0;
     let impar = 0;
     let cTabla = 0;
+    let multiplicacion = 0;
 
     while(cTabla < tabla){
         let cMult = 0;
         cTabla++;
-        while (cMult < multiplicar){
+        while (cMult < tabla){
             cMult++;
-            resultado = cTabla * cMult;
-            if (resultado % 2 == 0) {
+            multiplicacion = cTabla * cMult;
+            if (multiplicacion % 2 == 0) {
                 par++;
-                console.log(cTabla+"x"+cMult+ "=" +resultado+" bazz");
+                resultado += cTabla+"x"+cMult+ "=" +multiplicacion+" bazz"+"\n";
             } else {
                 impar++;
-                console.log(cTabla+"x"+cMult+ "=" +resultado+" buss");
+                resultado += cTabla+"x"+cMult+ "=" +multiplicacion+" buss"+"\n";
             }
         }
     }
-    console.log("hay "+par+" pares");
-    console.log("hay "+impar+" impares");
-    return resultado;
+    
+    return resultado +"hay "+par+" pares" +"\n" +" hay "+impar+" impares"+"\n";
 }
+ 

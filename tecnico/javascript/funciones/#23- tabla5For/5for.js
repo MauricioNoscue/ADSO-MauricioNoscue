@@ -1,21 +1,24 @@
-function tablaMultiplicar (ptabla, presultado){
+function tablaMultiplicar (ptabla){
     let tabla = ptabla;
-    let resultado = presultado;
+    let multiplicacion = 0;
     let contador;
+    let resultado = ""
     for(contador = 1; contador <= tabla; contador++){
-        resultado = tabla * contador;
-        console.log(tabla+"x"+contador+"="+resultado);
+        multiplicacion = tabla * contador;
+        resultado +=tabla+"x"+contador+"="+multiplicacion+"\n";
     }
     return resultado;
 }
 
-const  tablaMultiplicar2 = function (ptabla, presultado){
+const  tablaMultiplicar2 = function (ptabla){
     let tabla = ptabla;
-    let resultado = presultado;
+    let multiplicacion = 0;
     let contador;
+    let resultado = ""
     for(contador = 1; contador <= tabla; contador++){
-        resultado = tabla * contador;
-        console.log(tabla+"x"+contador+"="+resultado);
+        multiplicacion = tabla * contador;
+        resultado +=tabla+"x"+contador+"="+multiplicacion+"\n";
     }
     return resultado;
 }
+
