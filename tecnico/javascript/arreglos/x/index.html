@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Definir una matriz de ejemplo 5x5
+const matriz = [
+[1, 2, 3, 4, 5],
+[6, 7, 8, 9, 10],
+[11, 12, 13, 14, 15],
+[16, 17, 18, 19, 20],
+[21, 22, 23, 24, 25]
+];
+
+// Definir función para extraer elementos formando una 'X'
+function extraerX(matriz) {
+const elementosExtraidos = [];
+const n = matriz.length;
+for (let i = 0; i < n; i++) {
+    elementosExtraidos.push(matriz[i][i]);  // Elementos de la diagonal principal
+    elementosExtraidos.push(matriz[i][n - i - 1]);  // Elementos de la diagonal secundaria
+}
+return elementosExtraidos;
+}
+
+// Extraer elementos para formar una 'X' en la matriz
+const elementosX = extraerX(matriz);
+console.log("Elementos de la 'X':", elementosX);
+
+    </script>
+</body>
+</html>

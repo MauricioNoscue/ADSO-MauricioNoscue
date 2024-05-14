@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREAS-cada figura</title>
+    <script src="/bata/hola.js"></script>
+</head>
+<body>
+    <script>
+    
+        let eleccion = -1;
+        while(eleccion<1 || eleccion>=3){
+            eleccion=prompt("Escoja una opcion (1/2/3)"+"\n"+"1.Cuadrado"+"\n"+"2.Rectangulo"+"\n"+"3.Triangulo");
+
+            if (eleccion ==1){
+                alert("La operacion para hallar el area del Cuadrado es: Lado*Lado")
+                let lado1=prompt("Por favor Ingrese valor del Lado:");
+                alert("El area del Cuadrado es: "+areaCuadrado(lado1));
+            }else if(eleccion==2){
+                alert("La operacion para hallar el area del Rectangulo es: Lado*Altura")
+                let lado2=prompt("Por favor Ingrese valor del Lado:");
+                let altura=prompt("Ingrese valor de la Altura:");
+                alert("El area del Rectangulo es: "+areaRectangulo(lado2,altura));
+            }else if(eleccion==3){
+                alert("La operacion para hallar el area del Triangulo es: (base*Altura)/2")
+                let lado2=prompt("Por Favor Ingrese valor de la base:");
+                let altura2=prompt("Por favor Ingrese valor del Altura:");
+                alert("El area del Triangulo es: "+areaTriangulo(lado2,altura2));
+            }else{
+                alert("Opcion invalida, Ingrese una opcion valida.")
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
