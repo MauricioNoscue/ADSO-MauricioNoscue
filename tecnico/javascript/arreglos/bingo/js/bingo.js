@@ -1,3 +1,5 @@
+
+console.log("BINGO")
 let bingo = [];
 let iteracion1;
 let iteracion2;
@@ -17,20 +19,10 @@ for(iteracion1= 0; iteracion1 <5; iteracion1++){
 console.log(bingo)
 
 
-function extraerX(bingo) {
-    const elementosExtraidos = [];
-    const n = bingo.length;
-    for (let i = 0; i < n; i++) {
-        elementosExtraidos.push(bingo[i][i]);  // Elementos de la diagonal principal
-        elementosExtraidos.push(bingo[i][n - i - 1]);  // Elementos de la diagonal secundaria
-    }
-    return elementosExtraidos;
-    }
-
-    const elementosX = extraerX(bingo);
-    console.log("Elementos de la 'X':", elementosX);
 
 
+   
+console.log("cantidad de pares e  impares")
 let cantidadImpares = 0;
 let cantidadPares = 0;
  // 
@@ -49,6 +41,10 @@ for(iteracion1= 0; iteracion1 <5; iteracion1++){
 console.log ("pares: " + cantidadPares)
 console.log("impares: "+ cantidadImpares)
 // letrab
+
+
+console.log("LETRAS")
+
 
 console.log("B")
 let letraB = [];
@@ -99,4 +95,42 @@ for(iteracion1 = 0; iteracion1<5; iteracion1++){
 console.log(letraO);
 
 
-// letra x
+console.log("X GRANDE ")
+let lax = [];
+
+let sizeBingo = bingo.length;
+for(let u = 0; u < sizeBingo; u++){
+    lax.push(bingo[u][u])
+    lax.push(bingo[u][sizeBingo - u - 1])
+}
+
+console.log(lax)
+
+let equis1 = [];
+for(iteracion1 = 0; iteracion1<3; iteracion1++){
+    equis1.push(bingo[iteracion1][iteracion1+1])
+}for(iteracion2 = 0; iteracion2<3; iteracion2++){
+    equis1.push(bingo[iteracion2][4-(iteracion2+1)])
+}
+console.log("Equis1")
+console.log(equis1)
+// x pequeña 
+
+let equis2 = [];
+for( iteracion1 = 2; iteracion1<5; iteracion1++){
+    equis2.push(bingo[iteracion1][iteracion1-2])
+}for( iteracion2 = 2; iteracion2<5; iteracion2++){
+    equis2.push(bingo[iteracion2][4-(iteracion2)])
+}
+console.log("Equis 2")
+console.log(equis2)
+
+
+let equis3 = [];
+for(iteracion1 =2; iteracion1<5; iteracion1++){
+    equis3.push(bingo[iteracion1][iteracion1])
+}for(iteracion2 = 2; iteracion2<5; iteracion2++){
+    equis3.push(bingo[iteracion2][8-(iteracion2 +2)])
+}
+console.log("equis 3")
+console.log(equis3)
