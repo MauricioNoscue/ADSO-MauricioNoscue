@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 12px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .element {
+            padding: 10px;
+            border: 1px solid #90caf9;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .element:hover {
+            background-color: #bbdefb;
+        }
+        .alkali-metal { background-color: #ffcccb; }
+        .alkaline-earth-metal { background-color: #ffdd99; }
+        .transition-metal { background-color: #ffffcc; }
+        .post-transition-metal { background-color: #d1c4e9; }
+        .metalloid { background-color: #ccffcc; }
+        .nonmetal { background-color: #cce5ff; }
+        .halogen { background-color: #ffcce6; }
+        .noble-gas { background-color: #ffccff; }
+        .lanthanide { background-color: #ffe4b5; }
+        .actinide { background-color: #ffb6c1; }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="18">Tabla Periódica de los Elementos</th>
+        </tr>
+        <tr>
+            <td class="element nonmetal">H<br>1<br>Hidrógeno</td>
+            <td colspan="16"></td>
+            <td class="element noble-gas">He<br>2<br>Helio</td>
+        </tr>
+        <tr>
+            <td class="element alkali-metal">Li<br>3<br>Litio</td>
+            <td class="element alkaline-earth-metal">Be<br>4<br>Berilio</td>
+            <td colspan="10"></td>
+            <td class="element metalloid">B<br>5<br>Boro</td>
+            <td class="element nonmetal">C<br>6<br>Carbono</td>
+            <td class="element nonmetal">N<br>7<br>Nitrógeno</td>
+            <td class="element nonmetal">O<br>8<br>Oxígeno</td>
+            <td class="element halogen">F<br>9<br>Flúor</td>
+            <td class="element noble-gas">Ne<br>10<br>Neón</td>
+        </tr>
+        <tr>
+            <td class="element alkali-metal">Na<br>11<br>Sodio</td>
+            <td class="element alkaline-earth-metal">Mg<br>12<br>Magnesio</td>
+            <td colspan="10"></td>
+            <td class="element post-transition-metal">Al<br>13<br>Aluminio</td>
+            <td class="element metalloid">Si<br>14<br>Silicio</td>
+            <td class="element nonmetal">P<br>15<br>Fósforo</td>
+            <td class="element nonmetal">S<br>16<br>Azufre</td>
+            <td class="element halogen">Cl<br>17<br>Cloro</td>
+            <td class="element noble-gas">Ar<br>18<br>Argón</td>
+        </tr>
+        <tr>
+            <td class="element alkali-metal">K<br>19<br>Potasio</td>
+            <td class="element alkaline-earth-metal">Ca<br>20<br>Calcio</td>
+            <td class="element transition-metal">Sc<br>21<br>Escandio</td>
+            <td class="element transition-metal">Ti<br>22<br>Titanio</td>
+            <td class="element transition-metal">V<br>23<br>Vanadio</td>
+            <td class="element transition-metal">Cr<br>24<br>Cromo</td>
+            <td class="element transition-metal">Mn<br>25<br>Manganeso</td>
+            <td class="element transition-metal">Fe<br>26<br>Hierro</td>
+            <td class="element transition-metal">Co<br>27<br>Cobalto</td>
+            <td class="element transition-metal">Ni<br>28<br>Níquel</td>
+            <td class="element transition-metal">Cu<br>29<br>Cobre</td>
+            <td class="element transition-metal">Zn<br>30<br>Zinc</td>
+            <td class="element post-transition-metal">Ga<br>31<br>Galio</td>
+            <td class="element metalloid">Ge<br>32<br>Germanio</td>
+            <td class="element metalloid">As<br>33<br>Arsénico</td>
+            <td class="element nonmetal">Se<br>34<br>Selenio</td>
+            <td class="element halogen">Br<br>35<br>Bromo</td>
+            <td class="element noble-gas">Kr<br>36<br>Kriptón</td>
+        </tr>
+        <tr>
+            <td class="element alkali-metal">Rb<br>37<br>Rubidio</td>
+            <td class="element alkaline-earth-metal">Sr<br>38<br>Estroncio</td>
+            <td class="element transition-metal">Y<br>39<br>Itrio</td>
+            <td class="element transition-metal">Zr<br>40<br>Zirconio</td>
+            <td class="element transition-metal">Nb<br>41<br>Niobio</td>
+            <td class="element transition-metal">Mo<br>42<br>Molibdeno</td>
+            <td class="element transition-metal">Tc<br>43<br>Tecnecio</td>
+            <td class="element transition-metal">Ru<br>44<br>Rutenio</td>
+            <td class="element transition-metal">Rh<br>45<br>Rodio</td>
+            <td class="element transition-metal">Pd<br>46<br>Paladio</td>
+            <td class="element transition-metal">Ag<br>47<br>Plata</td>
+            <td class="element transition-metal">Cd<br>48<br>Cadmio</td>
+            <td class="element post-transition-metal">In<br>49<br>Indio</td>
+            <td class="element post-transition-metal">Sn<br>50<br>Estaño</td>
+            <td class="element metalloid">Sb<br>51<br>Antimonio</td>
+            <td class="element metalloid">Te<br>52<br>Telurio</td>
+            <td class="element halogen">I<br>53<br>Yodo</td>
+            <td class="element noble-gas">Xe<br>54<br>Xenón</td>
+        </tr>
+        <tr>
+            <td class="element alkali-metal">Cs<br>55<br>Cesio</td>
+            <td class="element alkaline-earth-metal">Ba<br>56<br>Bario</td>
+            <td class="element lanthanide">La<br>57<br>Lantano</td>
+            <td class="element lanthanide">Ce<br>58<br>Cerio</td>
+            <td class="element lanthanide">Pr<br>59<br>Praseodimio</td>
+            <td class="element lanthanide">Nd<br>60<br>Neodimio</td>
+            <td class="element lanthanide">Pm<br>61<br>Prometio</td>
+            <td class="element lanthanide">Sm<br>62<br>Samario</td>
+            <td class="element lanthanide">Eu<br>63<br>Europio</td>
+            <td class="element lanthanide">Gd<br>64<br>Gadolinio</td>
+            <td class="element lanthanide">Tb<br>65<br>Terbio</td>
+            <td class="element lanthanide">Dy<br>66<br>Disprosio</td>
+            <td class="element lanthanide">Ho<br>67<br>Holmio</td>
+            <td class="element lanthanide">Er<br>68<br>Erbio</td>
+            <td class="element lanthanide">Tm<br>69<br>Tulio</td>
+            <td class="element lanthanide">Yb<br>70<br>Iterbio</td>
+            <td class="element lanthanide">Lu<br>71<br>Lutecio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="element alkali-metal">Fr<br>87<br>Francio</td>
+            <td class="element alkaline-earth-metal">Ra<br>88<br>Radio</td>
+            <td class="element actinide">Ac<br>89<br>Actinio</td>
+            <td class="element actinide">Th<br>90<br>Torio</td>
+            <td class="element actinide">Pa<br>91<br>Protactinio</td>
+            <td class="element actinide">U<br>92<br>Uranio</td>
+            <td class="element actinide">Np<br>93<br>Neptunio</td>
+            <td class="element actinide">Pu<br>94<br>Plutonio</td>
+            <td class="element actinide">Am<br>95<br>Americio</td>
+            <td class="element actinide">Cm<br>96<br>Curio</td>
+            <td class="element actinide">Bk<br>97<br>Berkelio</td>
+            <td class="element actinide">Cf<br>98<br>Californio</td>
+            <td class="element actinide">Es<br>99<br>Einstenio</td>
+            <td class="element actinide">Fm<br>100<br>Fermio</td>
+            <td class="element actinide">Md<br>101<br>Mendelevio</td>
+            <td class="element actinide">No<br>102<br>Nobelio</td>
+            <td class="element actinide">Lr<br>103<br>Lawrencio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td class="element transition-metal">Rf<br>104<br>Rutherfordio</td>
+            <td class="element transition-metal">Db<br>105<br>Dubnio</td>
+            <td class="element transition-metal">Sg<br>106<br>Seaborgio</td>
+            <td class="element transition-metal">Bh<br>107<br>Bohrio</td>
+            <td class="element transition-metal">Hs<br>108<br>Hassio</td>
+            <td class="element transition-metal">Mt<br>109<br>Meitnerio</td>
+            <td class="element transition-metal">Ds<br>110<br>Damstadio</td>
+            <td class="element transition-metal">Rg<br>111<br>Roentgenio</td>
+            <td class="element transition-metal">Cn<br>112<br>Copernicio</td>
+            <td class="element post-transition-metal">Nh<br>113<br>Nihonio</td>
+            <td class="element post-transition-metal">Fl<br>114<br>Flerovio</td>
+            <td class="element post-transition-metal">Mc<br>115<br>Moscovio</td>
+            <td class="element post-transition-metal">Lv<br>116<br>Livermorio</td>
+            <td class="element metalloid">Ts<br>117<br>Tenesino</td>
+            <td class="element noble-gas">Og<br>118<br>Oganesón</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
