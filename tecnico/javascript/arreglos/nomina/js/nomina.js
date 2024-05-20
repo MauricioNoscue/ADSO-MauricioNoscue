@@ -9,6 +9,7 @@ let salud1;
 let pension1;
 let salario1;
 let arl1;
+let descuento1;
 let retencion1;
 let transporte1;
 let abonos1;
@@ -26,7 +27,7 @@ nomina = [
         {cedula: 1085925862, nombre: "Jesus", apellido: "Fierro", edad: 17, estrato: 2, valorDia: 30000, diasTrabajados: 30},
         {cedula: 1087922961, nombre: "Javier", apellido: "Tovar", edad: 18, estrato: 2, valorDia: 25000, diasTrabajados: 30},
         {cedula: 1004922068, nombre: "Santiago", apellido: "Chaparro", edad: 17, estrato: 3, valorDia: 32000, diasTrabajados: 30},
-        {cedula: 1074927860, nombre: "isabella", apellido: "Carrera", edad: 17, estrato: 3, valorDia: 50000, diasTrabajados: 30},
+        {cedula: 1074927860, nombre: "isabella", apellido: "Carrera", edad: 18, estrato: 2, valorDia: 90000, diasTrabajados: 30},
 
 
 ];
@@ -40,6 +41,8 @@ for(iteracion = 0; iteracion< nomina.length; iteracion++){
     transporte1 = calSubTransporte(nomina[iteracion].valorDia, nomina[iteracion].diasTrabajados);
     totalPagoPersona1 = calPagoTotal(nomina[iteracion].valorDia, nomina[iteracion].diasTrabajados);
     arl1 = calArl (nomina[iteracion].valorDia, nomina[iteracion].diasTrabajados);
+    descuento1 = calDescuento(nomina[iteracion].valorDia, nomina[iteracion].diasTrabajados)
+
     abonos1 = calcularAbono(nomina[iteracion].valorDia, nomina[iteracion].diasTrabajados, nomina[iteracion].estrato)
     pagoNomina.push({
         cedula: nomina[iteracion].cedula,
@@ -53,6 +56,7 @@ for(iteracion = 0; iteracion< nomina.length; iteracion++){
         salud: salud1,
         pension: pension1,
         arl : arl1,
+        descuentos: descuento1,
         Abonos: abonos1,
         retencion: retencion1,
         transporte: transporte1,
