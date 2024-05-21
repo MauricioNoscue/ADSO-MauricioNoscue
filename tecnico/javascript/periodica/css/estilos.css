@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 50px; 
+   
 }
 
 
@@ -13,6 +14,7 @@
     align-items: center;
     justify-content: center;
     height: 50px; 
+    
 }
 .row{
    
@@ -21,6 +23,8 @@
     height: 50px;
     margin-bottom: 10px;
 }
+
+
 
 .container{
     
@@ -35,4 +39,23 @@
 }
 .espacio-iz{
     margin-left: 6px;
+}
+
+.hola{
+    padding: 40px 0px 0px 0px;
+    
+}
+
+
+
+.color-fondo{
+    background-color: #4CAF50;
+    transition: background-color 0.3s;
+}
+.letra-blanca{
+    color: #fff;
+}
+
+.opo{
+    color: aqua;
 }
