@@ -9,15 +9,15 @@
 
 .container {
     height: auto;
-    width: auto; /* Cambiar a 'auto' para que se adapte al contenido */
+    width: auto; 
     border: 2px solid #000;
     margin-top: 30px;
-    padding: 10px 20px 1px 20px;
-    /* Añade display flex */
+    padding: 20px 20px 20px 35px;
+   
     display: flex;
-    overflow: auto;
-    /* Ajusta la dirección de flexbox según sea necesario */
-    flex-direction: column; /* Para una disposición vertical */
+    
+   
+    flex-direction: column; 
 }
 
 
@@ -47,10 +47,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
-    width: 108px;
-    flex: 0 0 108px;
-    font-size: 14px;
+    height: 53px;
+    width: 53px;
+    flex: 0 0 53px;
+    font-size: 8px;
     font-weight: bold; 
 }
 .columnas {
@@ -60,10 +60,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
-    width: 108px;
-    flex: 0 0 108px;
-    font-size: 14px; 
+    height: 53px;
+    width: 53px;
+    flex: 0 0 53px;
+    font-size: 8px; 
     font-weight: bold; 
 }
 

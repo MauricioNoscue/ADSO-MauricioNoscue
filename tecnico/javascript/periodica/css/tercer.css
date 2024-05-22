@@ -1,0 +1,53 @@
+
+
+
+
+.fila{
+    flex-wrap: nowrap;
+    height: 60px;
+    width: 372px;
+    
+    display: flexbox;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: bold; 
+}
+ .fila2{
+    float:left;
+    display: flexbox;
+    border: 1px solid #0ac41a;
+    border-radius: 6px;
+    height: 60px;
+    width: 62px;
+
+
+ }
+
+
+.fila2-iz{
+    border:  1px solid #0ac41a;
+    border-radius: 6px;
+    height: 60px;
+    height:  62px;
+    float: right;
+}
+
+.separacion{
+    margin-top: 30px;
+    
+}
+
+
+.metales{
+    background-color: #c38acf;
+}
+
+
+.amarillos{
+    background-color: #fcf75e;
+}
+
+.amarillos2{
+    background-color: #c7c03a;
+}
