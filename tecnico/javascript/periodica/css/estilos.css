@@ -1,48 +1,32 @@
-.cell {
-    border: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px; 
-   
-}
 
+/* Estilo para las celdas vacías */
 
-.cell2 {
-    border: 1px solid #fff;
+.row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px; 
-    
-}
-.row{
-   
-    display: flexbox;
-    flex-wrap: wrap;
-    height: 50px;
+    flex-wrap: nowrap;
     margin-bottom: 10px;
 }
 
-
-
-.container{
-    
-    width: 2000px;
+.container {
+    height: auto;
+    width: auto; /* Cambiar a 'auto' para que se adapte al contenido */
     border: 2px solid #000;
-    margin-top:  30px;
+    margin-top: 30px;
     padding: 10px 20px 1px 20px;
-
+    /* Añade display flex */
+    display: flex;
+    overflow: auto;
+    /* Ajusta la dirección de flexbox según sea necesario */
+    flex-direction: column; /* Para una disposición vertical */
 }
+
+
 .espacio-deiz{
     margin: 0 4px 0 4px;
 }
-.espacio-iz{
-    margin-left: 6px;
-}
 
-.hola{
-    padding: 40px 0px 0px 0px;
+.separacion{
+    padding: 20px 0px 0px 0px;
     
 }
 
@@ -50,12 +34,36 @@
 
 .color-fondo{
     background-color: #4CAF50;
-    transition: background-color 0.3s;
+    
 }
 .letra-blanca{
-    color: #fff;
+    color: #ec0c0c;
 }
 
-.opo{
-    color: aqua;
+
+.cell {
+    border: 1px solid #030303;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 108px;
+    flex: 0 0 108px;
+    font-size: 14px;
+    font-weight: bold; 
 }
+.columnas {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 108px;
+    flex: 0 0 108px;
+    font-size: 14px; 
+    font-weight: bold; 
+}
+
