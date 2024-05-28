@@ -36,16 +36,10 @@
     
     
 }
-
-.container{
-    display: flex;
-    flex-wrap: wrap; /* Esto permite que los elementos se envuelvan a la siguiente línea si no caben en una fila */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    min-height: 100vh;
-   
-    background-color: #ffacac;
+.principal{
+    width: 1100px;
 }
+
 
 .fila, tr{
     flex-wrap: nowrap;
@@ -53,28 +47,45 @@
     transition: transform 0.3s; 
     padding: 0px 0px ;
     margin: 0px 0px ;
-    
+    display: flexbox; 
    
 }
+.filaCuadrito{
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 40px;
+}
+.borde{
 
-
+    height: 40px ;
+   
+}
 .h{
+    
     font-weight: bold;
-    height: 22px;
+    height: 18px;
     width: 130px;
-    margin: 0px 0px 8px;
+    margin: 0px 0px 2px;
 }
 .chiqui{
    
-    height: 22px;
-    width: 22px;
+    height: 18px;
+    width: 18px;
 }
 
 .imagen {
     position: absolute;
-   
-    width: 80px; 
-    height: 80px; 
+    margin: 0px 0px 0px 400px;
+    width: 100px; 
+    height: 100px; 
+    cursor: pointer;
+    transition: transform 0.3s
+}
+.imagen:hover{
+    transform: scale(2.2);
 }
 .imagen-container {
     position: relative;
@@ -90,11 +101,12 @@
     cursor: pointer;
     transition: transform 0.3s; 
     height: 60px;
+    display: flexbox; 
   
  }
  .tr:hover {
 
-    transform: scale(5.5);
+    transform: scale(2.2);
 }
 
 .fila2-iz, tr{
@@ -102,16 +114,19 @@
     padding: 0px 0px;
     margin: 0px 0px ;
     height: 60px;
- 
+    display: flexbox; 
     float: right;
     cursor: pointer;
     transition: transform 0.3s; 
     border: 2px solid #fff;
 }
 
+.izquierda{
+    float: right;
+}
 
 .separacion{
-    margin-top: 30px;
+    margin-top: 10px;
     
 }
 
@@ -182,7 +197,7 @@
     box-shadow: inset 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .titulo {
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 20px 0px;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -197,7 +212,13 @@
 
   .letraInterna{
     display: flex;
-    margin: -20px 0px 0px 30px;
+    margin: -17px 0px 0px 30px;
     font-size: 10px;
    
+  }
+
+  .comentarioFinal{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px 0px 0px 60px;
   }

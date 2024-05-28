@@ -13,7 +13,8 @@
 <body>
     <div class="container">
         <div class="titulo"><h1>PERIODIC TABLE CHART</h1> </div>
-        <!--hola mundo-->
+       <div class="principal">
+         <!--hola mundo-->
         <!-- fila uno-->
         <div class="col-12 row">
             <div class="col-2  row fila">
@@ -28,8 +29,8 @@
                 </div>
                 <div class="col-4 mg " ></div>
             </div>
-            <div class="col-6 row fila ">
-                <div class="col-3 mg  fila3 metales2">
+            <div class="col-6 row filaCuadrito ">
+                <div class="col-3   borde metales2">
                     <div class="h">
                         <div class="chiqui rojo"></div>
                         <div class="letraInterna">Alkali Meta</div>
@@ -39,7 +40,7 @@
                         <div class="letraInterna"> Alkaline Earth</div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 borde">
                     <div class="h">
                         <div class="chiqui metales "></div>
                         <div class="letraInterna"> Nometal</div>
@@ -78,11 +79,11 @@
                     <div class="nombre">Berilio</div>
                 </div>
                 <div class="col-4 mg imagen-container" >
-                    <img  class="imagen" src="/imagenes/elemento.jpg" alt="">
+                    <img  class="imagen" src="/tecnico/javascript/periodica/imagenes/elemento.jpg" alt="">
                 </div>
             </div>
-            <div class="col-6 row fila ">
-                <div class="col-3">
+            <div class="col-6 row filaCuadrito ">
+                <div class="col-3 borde">
                     <div class="h">
                         <div class="chiqui amarillos"></div>
                         <div class="letraInterna">Transition Metal</div>
@@ -92,7 +93,7 @@
                         <div class="letraInterna"> Basic Metal</div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 borde">
                     <div class="h">
                         <div class="chiqui cafe "></div>
                         <div class="letraInterna"> Noble Gas</div>
@@ -170,15 +171,15 @@
                 </div>
                 <div class="col-4 "></div>
             </div>
-            <div class="col-6 row fila ">
-                <div class="col-3">
+            <div class="col-6 row filaCuadrito ">
+                <div class="col-3 borde ">
                     <div class="h">
                         <div class="chiqui azul"></div>
                         <div class="letraInterna"> Semimetal</div>
                     </div>   
                     
                 </div>
-                <div class="col-3">
+                <div class="col-3 borde">
                     <div class="h">
                         <div class="chiqui mg1 "></div>
                         <div class="letraInterna"> Actinide</div>
@@ -809,10 +810,15 @@
             </div>
         </div>
 
-          <!-- fila ocho-->
+          
         <div class=" separacion ">
+            <!-- fila ocho-->
             <div class="col-12 row ">
-                <div class="col-4 fila ">
+                <div class="col-4  row fila ">
+                    <div class="col-4  fila2" data-bs-toggle="modal" data-bs-target="#U">
+                        <div class="comentarioFinal">lanthanide <br>series</div>
+                    </div>
+                    
                    
                     <div class="col-2 mg tr fila2-iz amarillos2"  data-bs-toggle="modal" data-bs-target="#Nd">
                         <div class="numero">60</div>
@@ -822,7 +828,8 @@
                         <div class="nombre">Neodimio</div>
                         <div class="masa">144.24</div>
                     </div>
-                    <div class="col-2 mg tr fila2-iz amarillos2" data-bs-toggle="modal" data-bs-target="#Pr">
+                    
+                    <div class="col-2  tr fila2-iz amarillos2" data-bs-toggle="modal" data-bs-target="#Pr">
                         <div class="numero">59</div>
                        
                         <div class="simbolo">Pr</div>
@@ -845,12 +852,10 @@
                         <div class="nombre">lantano</div>
                     </div>
 
-                    <div class="col-2 mg tr fila2-iz amarillos2" data-bs-toggle="modal" data-bs-target="#La">
-                       
-                    </div>
+                   
                   
                 </div>
-                <div class="col-4  fila  ">
+                <div class="col-4  row fila  ">
                     <div class="col-2 mg tr fila2 amarillos2" data-bs-toggle="modal" data-bs-target="#Pm">
                         <div class="numero">61</div>
                         
@@ -895,7 +900,7 @@
                     </div>
                     
                 </div>
-                <div class="col-4 fila  ">
+                <div class="col-4  row fila  ">
                     <div class="col-2 mg tr fila2 amarillos2" data-bs-toggle="modal" data-bs-target="#Ho">
                         <div class="numero">67</div>
                         
@@ -939,29 +944,33 @@
               <!-- fila nueve-->
 
             <div class="col-12 row ">
-                <div class="col-4  fila ">
-                    <div class="col-2 mg1 tr fila2-iz" data-bs-toggle="modal" data-bs-target="#U">
+                <div class="col-4 row fila ">
+                    <div class="col-4  fila2" data-bs-toggle="modal" data-bs-target="#U">
+                        <div class="comentarioFinal">Actinide <br>series</div>
+                    </div>
+                   
+                    <div class="col-2 mg1 tr fila2" data-bs-toggle="modal" data-bs-target="#U">
                         <div class="numero">92</div>
                         
                         <div class="simbolo">U</div>
                         <div class="masa">238.03</div>
                         <div class="nombre">Uranio</div>
                     </div>
-                    <div class="col-2 mg1 tr fila2-iz" data-bs-toggle="modal" data-bs-target="#Pa">
+                    <div class="col-2 mg1 tr fila2" data-bs-toggle="modal" data-bs-target="#Pa">
                         <div class="numero">91</div>
                        
                         <div class="simbolo">Pa</div>
                         <div class="masa">231.04</div>
                         <div class="nombre">Protactinio</div>
                     </div>
-                    <div class="col-2 mg1 tr fila2-iz" data-bs-toggle="modal" data-bs-target="#Th">
+                    <div class="col-2 mg1 tr fila2" data-bs-toggle="modal" data-bs-target="#Th">
                         <div class="numero">90</div>
                         
                         <div class="simbolo">Th</div>
                         <div class="masa">232.04</div>
                         <div class="nombre">Torio</div>
                     </div>
-                    <div class="col-2 mg tr fila2-iz amarillos2" data-bs-toggle="modal" data-bs-target="#Pm">
+                    <div class="col-2 mg1 tr fila2 " data-bs-toggle="modal" data-bs-target="#Pm">
                         <div class="numero">89</div>
                         
                         <div class="simbolo">Ac</div>
@@ -970,7 +979,7 @@
                     </div>
                     
                 </div>
-                <div class="col-4  fila  ">
+                <div class="col-4 row fila ">
                     <div class="col-2 mg1 tr fila2" data-bs-toggle="modal" data-bs-target="#Np">
                         <div class="numero">93</div>
                        
@@ -1016,7 +1025,7 @@
                     </div>
                     
                 </div>
-                <div class="col-4  fila  ">
+                <div class="col-4 row fila  ">
                     <div class="col-2 mg1 tr fila2" data-bs-toggle="modal" data-bs-target="#Es">
                         <div class="numero">99</div>
                        
@@ -1057,6 +1066,7 @@
                 </div>
             </div>
         </div>
+       </div>
     </div>
 
 
