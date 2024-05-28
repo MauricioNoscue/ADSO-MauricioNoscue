@@ -1,0 +1,78 @@
+
+
+.simbolo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; 
+    
+    
+    
+}
+.nombre {
+   
+    text-align: center;
+    width: 60px;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.numero {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+   
+    
+}
+
+
+.masa {
+    float: right;
+    font-size: 10px;
+    padding: 0px 15px ;
+    font-weight: bold;
+    
+    
+}
+
+.elemento{
+    border: 1px solid #000;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    flex-wrap: nowrap;
+    display: flexbox; 
+    height: 60px;
+    float:left;
+}
+.fila2-iz, tr{
+    flex-wrap: nowrap;
+    padding: 0px 0px;
+    margin: 0px 0px ;
+    height: 60px;
+    display: flexbox; 
+    float: right;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    border: 2px solid#ebeff8;
+}
+.fila{
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    display: flexbox;
+}
+
+.separacion{
+    margin-top: 20px;
+}
+.animacion{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.animacion:hover{
+    transform: scale(2.2);
+}
+
+
