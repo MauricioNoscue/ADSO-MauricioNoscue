@@ -3,51 +3,46 @@
 .simbolo {
     font-size: 18px;
     font-weight: bold;
-    text-align: center; 
-    
-    
-    
+    text-align: center;    
 }
 .nombre {
-   
     text-align: center;
     width: 60px;
     float: left;
     font-size: 10px;
     font-weight: bold;
 }
-
-.numero {
+.nombre2 {
+    text-align: center;
+    width: 60px;
     float: left;
     font-size: 10px;
     font-weight: bold;
-   
-    
+    margin: 25px 0px 0px 8px
 }
+.numero {
+    float: left;
+    font-size: 10px;
 
-
+    font-weight: bold; 
+}
 .masa {
     float: right;
     font-size: 10px;
     padding: 0px 15px ;
-    font-weight: bold;
-    
-    
-}
+    font-weight: bold;  
+}   
 .principal{
     width: 1100px;
 }
-
-
 .fila, tr{
     flex-wrap: nowrap;
     cursor: pointer;
     transition: transform 0.3s; 
     padding: 0px 0px ;
     margin: 0px 0px ;
-    display: flexbox; 
-   
-}
+    display: flexbox;  
+}/* div del dentro el de 6 */
 .filaCuadrito{
     flex-wrap: nowrap;
     cursor: pointer;
@@ -55,14 +50,46 @@
     padding: 0px 0px ;
     margin: 0px 0px ;
     height: 40px;
-}
-.bxorde{
-
-    height: 40px ;
-   
-}
-.h{
     
+}
+.fila2,tr{
+    flex-wrap: nowrap;
+    float:left;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    border: 2px solid #ebeff8;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    height: 60px;
+    display: flexbox; 
+ }
+
+ .fila24,tr{
+    flex-wrap: nowrap;
+    float:left;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    border: 2px solid #ebeff8;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    height: 90px;
+    display: flexbox; 
+ }
+ .tr:hover {
+    transform: scale(2.2);
+}
+.fila2-iz, tr{
+    flex-wrap: nowrap;
+    padding: 0px 0px;
+    margin: 0px 0px ;
+    height: 60px;
+    display: flexbox; 
+    float: right;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    border: 2px solid#ebeff8;
+}
+.h{ 
     font-weight: bold;
     height: 18px;
     width: 130px;
@@ -73,13 +100,11 @@
     height: 18px;
     width: 18px;
 }
-
 .imagenfinal{
     position: absolute;
     margin: -100px 0px 0px 1035px;
     width: 65px; 
-    height: 120px; 
-    
+    height: 120px;   
 }
 .imagenfinal-container{
     position: relative;
@@ -103,8 +128,6 @@
 .tarro-container{
     position: relative;
 }
-
-
 .bolitas{
     position: absolute;
     margin: 6px 0px 0px 320px;
@@ -118,70 +141,26 @@
     position: absolute;
     margin: -60px 0px 0px 400px;
     width: 150px; 
-    height: 150px; 
-    
+    height: 150px;    
 }
-
 .imagen-container {
     position: relative;
 }
-
-
- .fila2,tr{
-    flex-wrap: nowrap;
-    float:left;
-    padding: 0px 0px ;
-    margin: 0px 0px ;
-    border: 2px solid #ebeff8;
-    cursor: pointer;
-    transition: transform 0.3s; 
-    height: 60px;
-    display: flexbox; 
-  
- }
- .tr:hover {
-
-    transform: scale(2.2);
-}
-
-.fila2-iz, tr{
-    flex-wrap: nowrap;
-    padding: 0px 0px;
-    margin: 0px 0px ;
-    height: 60px;
-    display: flexbox; 
-    float: right;
-    cursor: pointer;
-    transition: transform 0.3s; 
-    border: 2px solid#ebeff8;
-}
-
-.izquierda{
-    float: right;
-}
-
 .separacion{
     margin-top: 10px;
-    
 }
-
-
 .metales{
     background-color: #cccccc;
     box-shadow:inset 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
-
-
 .amarillos{
     background: linear-gradient(135deg, #ffee04, #ff8c00);
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-
 .amarillos2{
     background-color: #19a5e6;
     box-shadow: inset 0px 0px 30px rgba(5, 61, 40, 0.5);
 }
-
 .mg1{
     background: linear-gradient(135deg, #800080, #ff0000);
     box-shadow: inset 0px 10px 20px rgba(228, 212, 212, 0.3);
@@ -189,18 +168,13 @@
     font-weight: bold;
     color: white;
 }
-
-
 .rojo{
     background-color: #ff0000; 
     box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
     font-size: 18px;
     font-weight: bold;
     color: white;
-
-
 }
-
 .azul{
     background: linear-gradient(#2632d1, #54aaff);
     box-shadow: inset 0px 10px 20px rgba(80, 128, 218, 0.5);
@@ -208,25 +182,18 @@
     font-weight: bold;
     color: white;
 }
-
 .naranja{
     background: linear-gradient(135deg, #fddb18, #ff4500);
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-
 .rosa{
     background: linear-gradient(#FFB6C1, #FF69B4);
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
-
 .cafe{
     background: linear-gradient(#d3a05d, #8a4e23);
-    font-weight: bold;
-     
+    font-weight: bold;    
 }
-
-
 .verde{
     background: linear-gradient(#98FB98, #006400); 
     box-shadow: inset 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -237,30 +204,21 @@
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s; 
-  }
-  
+  } 
   .titulo:hover {
     transform: scale(1.1); 
   }
-
-
-
   .letraInterna{
     display: flex;
     margin: -17px 0px 0px 30px;
     font-size: 10px;
    
   }
-
   .comentarioFinal{
     font-size: 12px;
     font-weight: bold;
     margin: 0px 0px 0px 60px;
   }
-
-  
-
-
   .u{
     background: #ebeff8; 
      box-shadow: rgb(235, 239, 248);

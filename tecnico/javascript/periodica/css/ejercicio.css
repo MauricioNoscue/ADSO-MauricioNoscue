@@ -1,78 +1,99 @@
-
-
-.simbolo {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center; 
-    
-    
-    
-}
-.nombre {
-   
-    text-align: center;
-    width: 60px;
-    float: left;
-    font-size: 10px;
-    font-weight: bold;
-}
-
-.numero {
-    float: left;
-    font-size: 10px;
-    font-weight: bold;
-   
-    
-}
-
-
-.masa {
-    float: right;
-    font-size: 10px;
-    padding: 0px 15px ;
-    font-weight: bold;
-    
-    
+.fila{
+    height: 60px;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 .elemento{
-    border: 1px solid #000;
-    padding: 0px 0px ;
-    margin: 0px 0px ;
-    flex-wrap: nowrap;
-    display: flexbox; 
-    height: 60px;
-    float:left;
-}
-.fila2-iz, tr{
-    flex-wrap: nowrap;
+    margin: 0px 0px;
+    float: left;
     padding: 0px 0px;
-    margin: 0px 0px ;
-    height: 60px;
-    display: flexbox; 
-    float: right;
-    cursor: pointer;
-    transition: transform 0.3s; 
-    border: 2px solid#ebeff8;
-}
-.fila{
-    flex-wrap: nowrap;
-    cursor: pointer;
-    transition: transform 0.3s; 
-    padding: 0px 0px ;
-    margin: 0px 0px ;
-    display: flexbox;
+    border: 1px solid #000;
 }
 
-.separacion{
-    margin-top: 20px;
+.elemento-d{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    float: right;
+    border: 1px solid #000;
 }
+
+
+.filacuadrito{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    float: left;
+    height:60px ;
+}
+
+.contenedor{
+    height: 18px;
+    width: 130px;
+    margin: 0px 0px 10px;
+}
+
+.chiqui{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+}
+
+.letrainterna{
+    font-size: 10px;
+    font-weight: bold;
+    margin: -17px 0px 0px 30px;
+}
+
+.borde{
+    border: 1px solid #000;
+}
+
+
+.simbolo{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.numero{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.masa{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.nombre{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .animacion{
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: trasnform 0.3s;
+
 }
+
 .animacion:hover{
     transform: scale(2.2);
 }
 
 
+.imagen{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 30px 0px 0px 400px;
+}
+
+.imagen-container{
+    position: relative;
+}
+
+.titulo{
+    margin-bottom: 30px;
+}
