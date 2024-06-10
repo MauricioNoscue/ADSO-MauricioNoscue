@@ -40,3 +40,33 @@ botoncalcular.addEventListener('click', calcular );
 
 
 
+
+.imagen{
+    width: 60px;
+    height: 55px;
+    margin: 10px 0px 0px 400px;
+    position: absolute;
+}
+
+input{
+    border: 1.5px solid  #000
+}
+
+.titulo{
+    text-align: center;
+}
+
+.container{
+
+border: 1px solid#000;
+height: 500px;
+width: 1200px;
+margin: 0px 0px 0px 380px;
+}
+
+.container2{
+    text-align: center;
+}
+
+
+
