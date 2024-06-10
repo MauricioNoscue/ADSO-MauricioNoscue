@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nómina</title>
+    <script src="js/ensayo.js"></script>
+    <link rel="stylesheet" href="/ADSO-2900177/tecnico/javascript/arreglos/nomina/css/nomina.css">
+</head>
+<body>
+<div class="container ">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEbxBIOV8l19jcsVkkl-C9cWPpE68cvEkGQ&s" class="imagen">
+<h1 class="titulo">NOMINA SENA</h1>
+     <div class="container2">
+        <input type="text" id="cedu" placeholder="cedula">
+        <input type="text" id="nom" placeholder="nombre"  >
+        <input type="text" id="apell" placeholder="apellido"  >
+        <input type="text" id="eda" placeholder="edad"  >
+        <input type="text" id="estra" placeholder="estrato"  >
+        <input type="text" id="valord" placeholder="valor dia"  >
+        <input type="text" id="diatra" placeholder="dias trabajados"  >    
+        <input type="submit" value="Calcular" id="calcular" >
+    </div>
+</div>
+      
+   
+</body>
+</html>
