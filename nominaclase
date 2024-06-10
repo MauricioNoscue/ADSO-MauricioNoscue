@@ -26,3 +26,17 @@
    
 </body>
 </html>
+
+
+const Cedula = document.getElementById('cedu')
+const name = document.getElementById('nom')
+const apel = document.getElementById('apell')
+const ed = document.getElementById('eda')
+const est = document.getElementById('estra')
+const valor = document.getElementById('valord')
+const diat = document.getElementById('diatra')
+const botoncalcular = document.getElementById('calcular');
+botoncalcular.addEventListener('click', calcular );
+
+
+
