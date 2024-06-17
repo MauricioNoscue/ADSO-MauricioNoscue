@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saludo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="col-10 row forma">
+            <div class="formulario col-6">
+                <!--Inicio formulario-->
+                <form class="row g-3 needs-validation" novalidate  onsubmit="return saludar()";>
+                    <div class="col-md-12">
+                      <label for="txtsaludo" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="txtsaludo" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i> </button>
+                    </div>
+                  </form>
+                <!--Fin fotmulario-->
+            </div>
+            <div class="respuesta col-4">
+                <div id="saludo"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="jsF/formulario.js"></script>
+    <script src="jsF/saludo.js"></script>
+</body>
+</html>
