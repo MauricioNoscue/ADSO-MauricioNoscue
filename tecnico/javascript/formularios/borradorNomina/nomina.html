@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="col-10 row">   
+            <div class="formulario col-5">
+                <!--Inicio formulario-->
+                <form class="row g-3 needs-validation" novalidate  onsubmit=" return operaciones()">
+                    <div class="col-md-6 ">
+                      <label for="txtcedula" class="form-label">Cedula</label>
+                      <input type="number" class="form-control" id="txtcedula" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="txtnombres" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" id="txtnombres" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="txtapellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="txtapellidos" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="txtedad" class="form-label">edad</label>
+                        <input type="number" class="form-control" id="txtedad" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="txtestrato" class="form-label">estrato</label>
+                        <input type="number" class="form-control" id="txtestrato" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="txtvalordia" class="form-label">Valor del dia </label>
+                        <input type="number" class="form-control" id="txtvalordia" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="txtdiastra" class="form-label">Dias trabajados</label>
+                        <input type="number" class="form-control" id="txtdiastra" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                    
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i> </button>
+                    </div>
+                  </form>
+                <!--Fin fotmulario-->
+                
+            </div>
+
+            <div class="respuesta col-5">
+                <div id="nomina"></div>
+                    
+            </div>
+            
+        </div>
+        <div class="respuesta2">
+                <ul id="registros"></ul>
+        </div>
+       
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="jsF/validacion.js"></script>
+    <script src="jsF/nomina.js"></script>
+</body>
+</html>

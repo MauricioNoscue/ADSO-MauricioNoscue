@@ -12,7 +12,7 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEbxBIOV8l19jcsVkkl-C9cWPpE68cvEkGQ&s" class="imagen">
 <h1 class="titulo">NOMINA SENA</h1>
      <div class="container2">
-        <label for="id">Cedula</label>
+        <label for="id">Cedula</label> 
         <input type="number" id="cedu" placeholder="cedula">
         <label for="id">Nombres</label>
         <input type="text" id="nom" placeholder="nombre"  >

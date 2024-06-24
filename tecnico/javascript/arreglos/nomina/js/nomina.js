@@ -89,7 +89,7 @@ function calSalario(pvDia,pdTra){
     let salario;
     let vDia = pvDia;
     let dTra = pdTra;
-    salario = vDia*dTra;
+    salario = vDia*dTra;   
     return salario;
 
 }

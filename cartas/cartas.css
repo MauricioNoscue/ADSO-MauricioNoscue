@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .juego-de-memoria {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columnas de 100px cada una */
+    grid-template-rows: repeat(3, 100px); /* 3 filas de 100px cada una */
+    gap: 10px; /* Espacio entre las cartas */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carta {
+    width: 100px;
+    height: 100px;
+    background-color: #64b5f6;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición para transformación y cambio de color */
+    transform-style: preserve-3d; /* Mantener perspectiva 3D */
+  }
+  
+  .carta.volteada {
+    transform: rotateY(180deg); /* Voltear carta */
+  }
+  
+  .carta.correcta {
+    background-color: #4caf50; /* Color verde cuando es correcta */
+  }
+  
+  #temporizador {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
