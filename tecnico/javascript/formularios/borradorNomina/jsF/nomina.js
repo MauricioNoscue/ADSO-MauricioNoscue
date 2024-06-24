@@ -3,7 +3,7 @@
  * autor: mauricio noscue 
  * fecha: 22-06-2024
  */
-
+    
 
 function operaciones(){
     let cedula = parseInt(document.getElementById('txtcedula').value);
@@ -54,7 +54,7 @@ function operaciones(){
        
     `;
 
-    // Agregar el nuevo registro a la lista de registros
+    
     document.getElementById('registros').appendChild(nuevoRegistro);
     return false
 }

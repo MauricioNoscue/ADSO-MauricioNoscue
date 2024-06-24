@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edades condcionales </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/tecnico/javascript/formularios/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="/tecnico/javascript/formularios/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/tecnico/javascript/formularios/fontawesome/css/all.css">
+</head>
+<body>  
+
+    <div class="container">
+
+        <div class="col-10 row forma">
+            <div class="formulario col-6">
+                <!--Inicio formulario-->
+                <form class="row g-3 needs-validation" novalidate  onsubmit="return operaciones()">
+                      <h3></h3>
+                    <div class="col-md-4">
+                      <label for="txtpersona1" class="form-label">Fecha Nacimiento 1</label>
+                      <input type="number" class="form-control" id="txtpersona1" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="txtpersona2" class="form-label">Fecha Nacimiento 2 </label>
+                      <input type="number" class="form-control" id="txtpersona2" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4  ">
+                      <label for="txtpersona3" class="form-label">Fecha Nacimiento 3 </label>
+                      <input type="number" class="form-control" id="txtpersona3" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  
+                    
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i> </button>
+                    </div>
+                  </form>
+                <!--Fin fotmulario-->
+            </div>
+            <div class="respuesta col-4">
+                <div id="operaciones"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/tecnico/javascript/formularios/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="jsF/validacion.js"></script>
+    <script src="jsF/edadesCondicionales.js"></script>
+</body>
+</html> 

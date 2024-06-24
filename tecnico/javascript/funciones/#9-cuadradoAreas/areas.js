@@ -27,7 +27,7 @@ function areaMayor (parea1, parea2, parea3){
     }
 
 }
-
+  
 /**
  * constante 
  */

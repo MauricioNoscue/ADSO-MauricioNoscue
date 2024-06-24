@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porcentajeNota</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/tecnico/javascript/formularios/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="/tecnico/javascript/formularios/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/tecnico/javascript/formularios/fontawesome/css/all.css">
+</head>
+<body>  
+
+    <div class="container">
+
+        <div class="col-10 row forma">
+            <div class="formulario col-6">
+                <!--Inicio formulario-->
+                <form class="row g-3 needs-validation" novalidate  onsubmit="return operaciones()">
+                    <div class="col-md-12">
+                      <label for="txtlado" class="form-label">Lado del cuadrado </label>
+                      <input type="number" class="form-control" id="txtlado" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="txtbaseRectangulo" class="form-label">Base Rectangulo</label>
+                      <input type="number" class="form-control" id="txtbaseRectangulo" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="txtalturaRectangulo" class="form-label">Altura Rectangulo</label>
+                      <input type="number" class="form-control" id="txtalturaRectangulo" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="txtbaseTriangulo" class="form-label">Base triangulo</label>
+                      <input type="number" class="form-control" id="txtbaseTriangulo" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="txtalturaTriangulo" class="form-label">Altura Triangulo </label>
+                      <input type="number" class="form-control" id="txtalturaTriangulo" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  
+                    
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-paper-plane"></i> </button>
+                    </div>
+                  </form>
+                <!--Fin fotmulario-->
+            </div>
+            <div class="respuesta col-4">
+                <div id="operaciones"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/tecnico/javascript/formularios/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="jsF/validacion.js"></script>
+    <script src="jsF/figuras.js"></script>
+</body>
+</html> 
