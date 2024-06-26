@@ -14,7 +14,7 @@ function tablaa(ptabla){
     }
     return resultado;
 
-} 
+}    
 
 const tablaa2 = function(ptabla){
     let tabla = ptabla;

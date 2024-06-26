@@ -8,7 +8,7 @@ function calcular(pnumero){
     }
     return resultado;
 }
-
+ 
 
 const  calcular2 = function(pnumero){
     let numero = pnumero;

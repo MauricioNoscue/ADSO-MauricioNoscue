@@ -14,7 +14,7 @@ function tablaa( ptabla){
                 resultado += tabla+"x"+contador+ "=" +multiplicacion + " es impar" + "\n";
             }
         }
-     return resultado;   
+     return resultado;    
 }    
 
 

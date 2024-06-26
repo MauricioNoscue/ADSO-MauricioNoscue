@@ -19,3 +19,4 @@ const numeros2 = function(pnumero){
     return resultado;
 }  
 
+ 

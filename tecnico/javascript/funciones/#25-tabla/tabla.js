@@ -21,7 +21,7 @@ function tablaDeMultiplicar(ptabla) {
             }
         }
     }
-    
+     
     return resultado +"hay "+par+" pares" +"\n" +" hay "+impar+" impares"+"\n";
 }
 

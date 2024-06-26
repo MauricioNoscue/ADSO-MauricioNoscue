@@ -9,7 +9,7 @@ function tablaMultiplicar (ptabla){
     }
     return resultado;
 }
-
+  
 const  tablaMultiplicar2 = function (ptabla){
     let tabla = ptabla;
     let multiplicacion = 0;

@@ -10,7 +10,7 @@ function mayor(pnumero1, pnumero2){
     }else{
         return "Los números son iguales"
     }
-}
+}   
 
 const mayor2 = function(pnumero1, pnumero2){
     let numero1 = pnumero1;

@@ -9,7 +9,7 @@ function calcular(pnumero){
         
         return factorial;
 }
-
+ 
 
 const  calcular2 = function(pnumero){
     let numero = pnumero;

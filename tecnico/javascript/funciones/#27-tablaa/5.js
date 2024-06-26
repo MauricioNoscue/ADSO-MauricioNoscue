@@ -20,7 +20,7 @@ function tablaDeMultiplicar (pnumero){
                     resultado += "bass"+"\n";
                     
                 }
-                multiplicar++;
+                multiplicar++;   
         }
    } 
    return resultado +par+"\n" +impar;
