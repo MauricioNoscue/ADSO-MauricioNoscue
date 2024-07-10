@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../juegoMemoryStart/bootstrap/css/bootstrap.css">
+    <script src="../juegoMemoryStart/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../juegoMemoryStart/css/estilosPerfil.css">
+
+</head>
+<body>
+   
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+</button>
+
+
+  
+ <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="col-12 row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-primary col-4" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                        <div class="col-4">
+                            <div class="col-4 comentario">Perfil</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="col-4 izquierdaLogo">
+                                <img src="img/iconos/logoMemory.png" class="izquierdaLogo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerFoto">
+                        <div class="fotoPerfil">
+                            <!-- Foto de perfil -->
+                            <img id="profileImage" src="#" alt="Foto de perfil">
+                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        </div>
+                        <button type="button" class="btn btn-secondary" onclick="document.getElementById('fileInput').click();">Añadir foto</button>
+                        <button type="button" class="btn btn-danger" id="removePhotoButton" style="display: none;">Quitar foto</button>
+                    </div>
+                    <div class="container2">
+                        <div class="col-9 row ancho">
+                            <div class="contenidoPerfil col-5">
+                                <input type="text" class="form-control perfil-input" placeholder="Nombre usuario">
+                            </div>
+                            <div class="contenidoPerfil col-4">
+                                <input type="text" class="form-control perfil-input" placeholder="Apodo">
+                            </div>
+                        </div>
+                        <div class="col-5 row ancho">
+                            <div class="contenidoPerfil col-5">
+                                <input type="email" class="form-control perfil-input" placeholder="Correo">
+                            </div>
+                        </div>
+                        <div class="col-12 row ancho">
+                            <div class="vacio col-12"></div>
+                        </div>
+                        <div class="col-11 row ancho">
+                            <div class="tituloTabla col-11"></div>
+                        </div>
+                        <div class="tabla">
+                            <div class="col-10 row espacioInicioTabla">
+                                <div class="col-6">
+                                    <span>Últimas partidas</span>
+                                </div>
+                                <div class="col-3">
+                                    <span>Tiempo</span>
+                                </div>
+                                <div class="col-3">
+                                    <span>Puntos</span>
+                                </div>
+                            </div>
+                            <div class="col-10 row espaciosTabla">
+                                <div class="col-6">
+                                    <span>Partida 009</span>
+                                </div>
+                                <div class="col-3">
+                                    <span>00:00</span>
+                                </div>
+                                <div class="col-3 puntos">
+                                    <span>000</span>
+                                </div>
+                            </div>
+                            <div class="col-10 row espaciosTabla">
+                                <div class="col-6">
+                                    <span>Partida 008</span>
+                                </div>
+                                <div class="col-3">
+                                    <span>00:00</span>
+                                </div>
+                                <div class="col-3 puntos">
+                                    <span>000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const profileImage = document.getElementById('profileImage');
+                profileImage.src = e.target.result;
+                profileImage.style.display = 'block';
+                document.getElementById('removePhotoButton').style.display = 'inline-block';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+    
+    document.getElementById('removePhotoButton').addEventListener('click', function() {
+        const profileImage = document.getElementById('profileImage');
+        profileImage.src = '#';
+        profileImage.style.display = 'none';
+        this.style.display = 'none';
+        document.getElementById('fileInput').value = ''; // Reset file input
+    });
+    
+    
+</script>
+
+
+</body>
+</html>
