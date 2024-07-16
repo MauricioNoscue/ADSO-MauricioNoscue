@@ -1,0 +1,20 @@
+.container{
+  
+    float:inherit;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+};
+
+
+
+.seleccion{
+    background-color: rgb(255, 142, 127);
+}
+
+.table{
+    background-color: blueviolet;
+}

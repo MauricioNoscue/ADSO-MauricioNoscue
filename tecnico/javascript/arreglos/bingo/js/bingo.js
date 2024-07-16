@@ -20,7 +20,7 @@ console.log(bingo)
 
 
 
-
+  
    
 console.log("cantidad de pares e  impares")
 let cantidadImpares = 0;
@@ -111,7 +111,7 @@ for(iteracion1 = 0; iteracion1<3; iteracion1++){
     equis1.push(bingo[iteracion1][iteracion1+1])
 }for(iteracion2 = 0; iteracion2<3; iteracion2++){
     equis1.push(bingo[iteracion2][4-(iteracion2+1)])
-}
+};
 console.log("Equis1")
 console.log(equis1)
 // x pequeña 
@@ -121,7 +121,7 @@ for( iteracion1 = 2; iteracion1<5; iteracion1++){
     equis2.push(bingo[iteracion1][iteracion1-2])
 }for( iteracion2 = 2; iteracion2<5; iteracion2++){
     equis2.push(bingo[iteracion2][4-(iteracion2)])
-}
+};
 console.log("Equis 2")
 console.log(equis2)
 
@@ -131,6 +131,6 @@ for(iteracion1 =2; iteracion1<5; iteracion1++){
     equis3.push(bingo[iteracion1][iteracion1])
 }for(iteracion2 = 2; iteracion2<5; iteracion2++){
     equis3.push(bingo[iteracion2][8-(iteracion2 +2)])
-}
+};
 console.log("equis 3")
 console.log(equis3)
