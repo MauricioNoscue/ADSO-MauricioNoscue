@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let letras = ['B', 'I', 'N', 'G', 'O'];
     let iteracion1;
     let iteracion2;
+    let contadorB = 0;
     let contador = 0;
     let imprimir = '';
 
@@ -23,18 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     // Primera tabla de bingo simple
     for(iteracion1 =0; iteracion1<1; iteracion1++){
-        imprimir += '<table class="table" style="border: 1px solid #000; width: 300px; margin: 5px;">';
+        imprimir += '<table class="table">';
 
     imprimir += '<tr>';
-    for (let letra of letras) {
-        imprimir += '<th>' + letra + '</th>';
+     for(contadorB = 0; contadorB< letras.length; contadorB++){
+        imprimir += '<th class = "cabeza">'+ letras[contadorB]+'</th>'
     }
     imprimir += '</tr>';
 
     for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
         imprimir += '<tr>';
         for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-            imprimir += '<td>' + bingo[iteracion1][iteracion2] + '</td>';
+            imprimir += '<td class = "borde">' + bingo[iteracion1][iteracion2] + '</td>';
         }
         imprimir += '</tr>';
     };
@@ -43,20 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     // letras 
     for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-        imprimir += '<table class="table" style ="border: 1px solid#000; width:300px; margin:5px;">';
+        imprimir += '<table class="table">';
         imprimir += '<tr>';
     
-        for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-            imprimir += '<th>' + letras[contadorB] + '</th>';
+        for ( contadorB = 0; contadorB < letras.length; contadorB++) {
+            imprimir += '<th class = "cabeza">' + letras[contadorB] + '</th>';
         };
         imprimir += '</tr>';
-        for (let contador = 0; contador < 5; contador++) {
+        for ( contador = 0; contador < 5; contador++) {
             imprimir += '<tr>';
             for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
                 if (iteracion2 == iteracion1) {
-                    imprimir += '<td style=" background-color: rgb(255, 142, 127);"><strong>' + bingo[contador][iteracion2] + '</strong></td>';
+                    imprimir += '<td class = "seleccion borde";">' + bingo[contador][iteracion2] + '</td>';
                 } else {
-                    imprimir += '<td>' + bingo[contador][iteracion2] + '</td>';
+                    imprimir += '<td class = "borde">' + bingo[contador][iteracion2] + '</td>';
                 };
             };
             imprimir += '</tr>';
@@ -66,27 +67,43 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     // Tercera tabla de bingo con la X grande
     for(iteracion1 =0; iteracion1<1; iteracion1++){
-        imprimir += '<table class="table" style ="border: 1px solid#000; width:300px; margin:5px;">'
+        imprimir += '<table class="table">'
     imprimir += '<tr>';
-    for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-        imprimir += '<th>' + letras[contadorB] + '</th>';
+    for ( contadorB = 0; contadorB < letras.length; contadorB++) {
+        imprimir += '<th class = "cabeza">' + letras[contadorB] + '</th>';
     };
     imprimir += '</tr>';
     for(iteracion1 =0; iteracion1 <5; iteracion1++){    
         imprimir += '<tr>';
         for(iteracion2 = 0; iteracion2 < 5; iteracion2++){
             if(iteracion2 == iteracion1 ){
-                imprimir += '<td>'+'<strong>'+bingo[iteracion1][iteracion2]+'</strong>'+'</td>'
+                imprimir += '<td class = "seleccion borde">'+bingo[iteracion1][iteracion2]+'</td>'
             }else if(iteracion2 == 5-(iteracion1+1)){
-                imprimir += '<td>'+'<strong>'+bingo[iteracion1][iteracion2]+'</strong>'+'</td>'
+                imprimir += '<td  class = "seleccion borde">'+bingo[iteracion1][iteracion2]+'</td>'
             }
             else{
-                imprimir += '<td>'+bingo[iteracion1][iteracion2]+'</td>';
+                imprimir += '<td class = "borde">'+bingo[iteracion1][iteracion2]+'</td>';
             };
         };
         imprimir += '</tr>';
     };
     imprimir += '</table>';
     };
+
+
+
+
+    for(iteracion1 = 0; iteracion1 <1; iteracion1++){
+        imprimir += '<table class= "table">';
+        imprimir += '<tr>'
+        for(contadorB =0; contadorB<letras.length; contadorB++){
+            imprimir += '<th class = "cabeza">'+letras[contadorB]+'</th>'
+        }
+        imprimir += '</tr>';
+        
+        
+    };
+
+
     document.getElementById('bingo').innerHTML = imprimir;
 });

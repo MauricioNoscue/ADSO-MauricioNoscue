@@ -6,15 +6,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .seleccion{
+        background-color: rgb(255, 142, 127);
+        font-weight: bold;
+    }
+    
    
+    .table{
+        background-color: blueviolet;
+        border: 1px solid#000; 
+        width:300px; 
+        margin:5px;
+       
+     
+    }
+    
+    .cabeza{
+        background-color: #ccdd69;
+    }    
+    
+    .borde{
+        border: 1px solid #000
+    }
+
 };
 
 
 
-.seleccion{
-    background-color: rgb(255, 142, 127);
-}
-
-.table{
-    background-color: blueviolet;
-}
