@@ -134,3 +134,5 @@ for(iteracion1 =2; iteracion1<5; iteracion1++){
 };
 console.log("equis 3")
 console.log(equis3)
+
+

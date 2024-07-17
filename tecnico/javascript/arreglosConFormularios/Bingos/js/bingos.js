@@ -97,9 +97,22 @@ document.addEventListener('DOMContentLoaded', function() {
             imprimir += '<tr>';
             for(iteracion2 = 0; iteracion2 <5; iteracion2++){
                 if( iteracion1 == iteracion2+2){
-                    imprimir += '<td class="seleccion borde">' + bingo[iteracion1][iteracion2]+'</td>'
+                    imprimir += '<td class=" seleccion borde">' + bingo[iteracion1][iteracion2]+'</td>'
                 }else if( iteracion1 >= 2 && iteracion1 == 4-(iteracion2)){
-                    imprimir += '<td class="seleccion borde">' + bingo[iteracion1][iteracion2]+'</td>'
+                    imprimir += '<td class=" seleccion borde">' + bingo[iteracion1][iteracion2]+'</td>'
+                
+                // primera x
+                }else if(iteracion1 >= 0 && iteracion1 == iteracion2 -1 && iteracion1 <=2){
+                    imprimir += '<td class="seleccion2 borde">' + bingo[iteracion1][iteracion2]+'</td>'
+                }else if(iteracion1 >=-1 && iteracion1 == 4-(iteracion2+1) && iteracion1 <=2){
+                    imprimir += '<td class="seleccion2 borde">' + bingo[iteracion1][iteracion2]+'</td>'
+
+                    // tercera x
+                }else if(  iteracion1 >=2 && iteracion2 == iteracion1 ){
+                    imprimir += '<td class="seleccion3 borde">' + bingo[iteracion1][iteracion2]+'</td>'
+
+                }else if(iteracion2 >= 2 && iteracion1 == 8-(iteracion2 +2)){
+                    imprimir += '<td class="seleccion3 borde">' + bingo[iteracion1][iteracion2]+'</td>'
                 }else{
                     imprimir += '<td class="borde">' + bingo[iteracion1][iteracion2]+'</td>'
                 }
@@ -111,3 +124,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('bingo').innerHTML = imprimir;
 });
+
+
+
+
+
+
+
+console.log("hola ")
