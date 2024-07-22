@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // primera x
                 if(iteracion1 >= 0 && iteracion1 == iteracion2 -1 && iteracion1 <=2){
                     imprimir += '<td class="seleccion">' + bingo[iteracion1][iteracion2]+'</td>'
-                }else if(iteracion1 >=-1 && iteracion1 == 3-(iteracion2) && iteracion1 <=2){
+                }else if( iteracion1 == 3-(iteracion2) && iteracion1 <=2){
                     imprimir += '<td class="seleccion">' + bingo[iteracion1][iteracion2]+'</td>'
                  // segunda x   
                 }else if( iteracion1 == iteracion2+2){
@@ -137,10 +137,10 @@ document.addEventListener('DOMContentLoaded', function() {
         for(iteracion1 = 0; iteracion1 <5; iteracion1++){
             imprimir+= '<tr>';
             for(iteracion2 = 0; iteracion2 <5; iteracion2++){
-                if(iteracion1>=2 &&iteracion1== iteracion2){
+                if(iteracion1 >= 0 && iteracion1 == iteracion2 -1 && iteracion1 <=2){
                     imprimir += '<td class ="seleccion">'+bingo[iteracion1][iteracion2]+'</td>'
-                }else if (iteracion2 >=2 && iteracion1 == 6-(iteracion2)){
-                    imprimir+= '<td class = "seleccion">'+ bingo[iteracion1][iteracion2]+'</td>'
+                }else if (iteracion1 == 3-(iteracion2) && iteracion1 <=2){
+                    imprimir += '<td class = "seleccion">'+ bingo[iteracion1][iteracion2]+'</td>'
                 }else{
                     imprimir += '<td class = "borde">'+ bingo[iteracion1][iteracion2]+'</td>'
                 }
