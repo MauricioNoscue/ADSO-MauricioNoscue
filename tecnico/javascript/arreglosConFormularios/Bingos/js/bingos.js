@@ -125,29 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         imprimir += '</table>';
     }
 
-
-
-    for(iteracionTabla = 0; iteracionTabla <1; iteracionTabla++){
-        imprimir += '<table class="table">';
-        imprimir+= '<tr>'
-        for( contadorB =0; contadorB < letras.length; contadorB++){
-            imprimir += '<th class="cabeza">' +letras[contadorB]+'</th>';   
-        }
-        imprimir += '</tr>'
-        for(iteracion1 = 0; iteracion1 <5; iteracion1++){
-            imprimir+= '<tr>';
-            for(iteracion2 = 0; iteracion2 <5; iteracion2++){
-                if(iteracion1 >= 0 && iteracion1 == iteracion2 -1 && iteracion1 <=2){
-                    imprimir += '<td class ="seleccion">'+bingo[iteracion1][iteracion2]+'</td>'
-                }else if (iteracion1 == 3-(iteracion2) && iteracion1 <=2){
-                    imprimir += '<td class = "seleccion">'+ bingo[iteracion1][iteracion2]+'</td>'
-                }else{
-                    imprimir += '<td class = "borde">'+ bingo[iteracion1][iteracion2]+'</td>'
-                }
-            }
-            imprimir+= '</tr>'
-        }
-        imprimir += '</table>'
-    }
     document.getElementById('bingo').innerHTML = imprimir;
 });
+

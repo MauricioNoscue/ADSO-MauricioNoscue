@@ -16,8 +16,6 @@ arreglo = [1,2,3,4,5,6,7,8,9,10];
 for (iteracion = 0; iteracion < arreglo.length; iteracion++) {
     resultaLista += `<option>`+arreglo[iteracion]+ `</option>`;
 }
-
-
 document.getElementById(`lista-numeros`).innerHTML = resultaLista;
 
 arreglo = [];
