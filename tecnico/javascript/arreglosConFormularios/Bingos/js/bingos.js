@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     imprimir += '<td class="seleccion3">' + bingo[iteracion1][iteracion2]+'</td>'
                 }else{
                     // resto de la tabla 
+                    
                     imprimir += '<td class="borde">' + bingo[iteracion1][iteracion2]+'</td>'
                 }
             }

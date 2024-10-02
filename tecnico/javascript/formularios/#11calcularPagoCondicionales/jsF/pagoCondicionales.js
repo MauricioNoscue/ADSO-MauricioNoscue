@@ -1,4 +1,4 @@
-/**
+                                            /**
  * funcion calcular salario co condicinales 
  * autor: mauricio noscue 
  * fecha: 26-06-2024
