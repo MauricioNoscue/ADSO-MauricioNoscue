@@ -8,13 +8,13 @@
     justify-content: center;
 
     .seleccion{
-        background-color: rgb(255, 142, 127);
+        background-color: rgb(245, 255, 107);
         font-weight: bold;
         border: 1px solid #000
     }
 
     .seleccion2{
-        background-color: rgb(0, 231, 39);
+        background-color: rgb(45, 238, 132);
         font-weight: bold;
         border: 1px solid #000
     }
@@ -27,7 +27,7 @@
     
    
     .table{
-        background-color: blueviolet;
+        background-color: #fff;
         border: 1px solid#000; 
         width:300px; 
         margin:5px;
@@ -36,7 +36,7 @@
     }
     
     .cabeza{
-        background-color: #ccdd69;
+        background-color: #3567ee;
     }    
     
     .borde{

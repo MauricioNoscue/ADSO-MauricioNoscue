@@ -28,7 +28,7 @@ function operaciones(){
     <strong> Pago total : </strong> ${pagoTotal}<br>
     `;
     return false
-}
+};
 
 
 function calcularSalario(pavalorDia, pdiasTrab) {
@@ -36,7 +36,7 @@ function calcularSalario(pavalorDia, pdiasTrab) {
     let diasTra = pdiasTrab;
     let salario = diasTra * valorDia;
     return   salario;
-}
+};
 
 
 function calcularSalud(psalario) {
